@@ -6,6 +6,8 @@ public class MainEngine : MonoBehaviour
 
     float yearTimer;
     int eventCounter;
+    static int numberofFollowers;
+    static int powerLeft;
 
     bool eventHasOccurredJan;
     bool eventHasOccurredFeb;
@@ -23,6 +25,9 @@ public class MainEngine : MonoBehaviour
     void Start()
     {
         yearTimer = 360.0f;
+        numberofFollowers = 100;
+        powerLeft = 0;
+        timeForSacrifice();
         eventCounter = Random.Range(0, 4);
         eventHasOccurredJan = false;
         eventHasOccurredFeb = false;
@@ -38,6 +43,11 @@ public class MainEngine : MonoBehaviour
         eventHasOccurredDec = false;
     }
 
+
+    void timeForSacrifice()
+    {
+
+    }
 
     //Details on what happens in a bad event
     //@param is the severity of event, 0: mild 1: so-so 2:severe
@@ -89,6 +99,7 @@ public class MainEngine : MonoBehaviour
     void reInitialization()
     {
         yearTimer = 360.0f;
+        timeForSacrifice();
         eventCounter = Random.Range(0, 4);
         eventHasOccurredJan = false;
         eventHasOccurredFeb = false;
