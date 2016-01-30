@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BadeventsCollection>
+ <Badevents>
+  <Events badeventsvariation="Earthquate">
+     <Happening1>good</Happening1>
+	 <Happening2>bad</Happening2>
+	 <Response>angry</Response>
+	 <Response>happy</Response>
+	 </Events>
+	   <Events badeventsvariation="Flood">
+     <Happening1>good</Happening1>
+	 <Happening2>bad</Happening2>
+	 <Response>angry</Response>
+	 <Response>happy</Response>
+	 </Events>
+ </Badevents>
+</BadeventsCollection>
