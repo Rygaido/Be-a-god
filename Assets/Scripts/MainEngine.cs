@@ -9,6 +9,7 @@ public class MainEngine : MonoBehaviour
     static int numberofFollowers;
     static int powerLeft;
     int followersIncreaseTimes;
+    int playerChoice;
 
     bool eventHasOccurredJan;
     bool eventHasOccurredFeb;
@@ -63,6 +64,115 @@ public class MainEngine : MonoBehaviour
     {
 		followers.Panic ();
         Debug.Log("Bad Event Occurred with severity of " + eventSeverity);
+
+        if(playerChoice==1)
+        {
+            if(eventSeverity==0)
+            {
+                numberOfFollowersUpdate(-7);
+                powerUpdate(-5);
+            }
+
+            else if(eventSeverity==1)
+            {
+                numberOfFollowersUpdate(-7);
+                powerUpdate(-5);
+            }
+
+            else if(eventSeverity==2)
+            {
+                numberOfFollowersUpdate(-7);
+                powerUpdate(-5);
+            }
+        }
+
+        else if (playerChoice == 2)
+        {
+            if (eventSeverity == 0)
+            {
+                numberOfFollowersUpdate(-7);
+                powerUpdate(-10);
+            }
+
+            else if (eventSeverity == 1)
+            {
+                numberOfFollowersUpdate(-7);
+                powerUpdate(-10);
+            }
+
+            else if (eventSeverity == 2)
+            {
+                numberOfFollowersUpdate(-7);
+                powerUpdate(-10);
+            }
+        }
+
+        else if (playerChoice == 3)
+        {
+            if (eventSeverity == 0)
+            {
+                numberOfFollowersUpdate(-7);
+                powerUpdate(-15);
+            }
+
+            else if (eventSeverity == 1)
+            {
+                numberOfFollowersUpdate(-7);
+                powerUpdate(-15);
+            }
+
+            else if (eventSeverity == 2)
+            {
+                numberOfFollowersUpdate(-7);
+                powerUpdate(-15);
+            }
+        }
+
+        else if (playerChoice == 4)
+        {
+            if (eventSeverity == 0)
+            {
+                numberOfFollowersUpdate(-7);
+                powerUpdate(-20);
+            }
+
+            else if (eventSeverity == 1)
+            {
+                numberOfFollowersUpdate(-7);
+                powerUpdate(-20);
+            }
+
+            else if (eventSeverity == 2)
+            {
+                numberOfFollowersUpdate(-7);
+                powerUpdate(-20);
+            }
+        }
+
+        else if (playerChoice == 5)
+        {
+            if (eventSeverity == 0)
+            {
+                numberOfFollowersUpdate(-7);
+                powerUpdate(0);
+            }
+
+            else if (eventSeverity == 1)
+            {
+                numberOfFollowersUpdate(-7);
+                powerUpdate(0);
+            }
+
+            else if (eventSeverity == 2)
+            {
+                numberOfFollowersUpdate(-7);
+                powerUpdate(0);
+            }
+        }
+
+
+
+        
     }
 
     //Detalis on what happens in a neutral event
@@ -77,8 +187,25 @@ public class MainEngine : MonoBehaviour
     {
 		followers.Celebrate ();
         Debug.Log("Good Event Occurred with severity of " + eventSeverity);
+        if(eventSeverity==0)
+            numberOfFollowersUpdate(5);
+
+        else if(eventSeverity==1)
+            numberOfFollowersUpdate(10);
+
+        else if (eventSeverity == 1)
+            numberOfFollowersUpdate(15);
     }
 
+    void numberOfFollowersUpdate(int k)
+    {
+        numberofFollowers += k;
+    }
+
+    void powerUpdate(int k)
+    {
+        powerLeft += k;
+    }
 
     //Details when event Occurs
     void eventOccurred()
