@@ -3,6 +3,7 @@ using System.Collections;
 
 public class MainEngine : MonoBehaviour
 {
+	public static MainEngine singleton;
 
     float yearTimer;
     int eventCounter;
@@ -10,6 +11,7 @@ public class MainEngine : MonoBehaviour
     static int powerLeft;
     int followersIncreaseTimes;
     int playerChoice;
+	static bool timerRunning;
 
     bool eventHasOccurredJan;
     bool eventHasOccurredFeb;
@@ -30,11 +32,13 @@ public class MainEngine : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+		singleton = this;
         followersIncreaseTimes = 6;
         yearTimer = 360.0f;
         numberofFollowers = 100;
         powerLeft = 0;
-        timeForSacrifice();
+		timeForSacrifice();
+        
         eventCounter = Random.Range(0, 4);
         eventHasOccurredJan = false;
         eventHasOccurredFeb = false;
@@ -52,10 +56,17 @@ public class MainEngine : MonoBehaviour
 		followers = civilianManager.GetComponent<civilian_manager> ();
     }
 
+	public static void NewSacrificeMade(int numberSaced){
+		timerRunning = true;
+		numberofFollowers -= numberSaced;
+		powerLeft += numberSaced * 10;
+		MainEngine.singleton.badEvent (1);
+	}
 
     void timeForSacrifice()
     {
-
+		timerRunning = false;
+		UIMain.NewSac (numberofFollowers);
     }
 
     //Details on what happens in a bad event
@@ -64,122 +75,129 @@ public class MainEngine : MonoBehaviour
     {
 		followers.Panic ();
         Debug.Log("Bad Event Occurred with severity of " + eventSeverity);
-
-        if(playerChoice==1)
-        {
-            if(eventSeverity==0)
-            {
-                numberOfFollowersUpdate(-7);
-                powerUpdate(-5);
-            }
-
-            else if(eventSeverity==1)
-            {
-                numberOfFollowersUpdate(-7);
-                powerUpdate(-5);
-            }
-
-            else if(eventSeverity==2)
-            {
-                numberOfFollowersUpdate(-7);
-                powerUpdate(-5);
-            }
-        }
-
-        else if (playerChoice == 2)
-        {
-            if (eventSeverity == 0)
-            {
-                numberOfFollowersUpdate(-7);
-                powerUpdate(-10);
-            }
-
-            else if (eventSeverity == 1)
-            {
-                numberOfFollowersUpdate(-7);
-                powerUpdate(-10);
-            }
-
-            else if (eventSeverity == 2)
-            {
-                numberOfFollowersUpdate(-7);
-                powerUpdate(-10);
-            }
-        }
-
-        else if (playerChoice == 3)
-        {
-            if (eventSeverity == 0)
-            {
-                numberOfFollowersUpdate(-7);
-                powerUpdate(-15);
-            }
-
-            else if (eventSeverity == 1)
-            {
-                numberOfFollowersUpdate(-7);
-                powerUpdate(-15);
-            }
-
-            else if (eventSeverity == 2)
-            {
-                numberOfFollowersUpdate(-7);
-                powerUpdate(-15);
-            }
-        }
-
-        else if (playerChoice == 4)
-        {
-            if (eventSeverity == 0)
-            {
-                numberOfFollowersUpdate(-7);
-                powerUpdate(-20);
-            }
-
-            else if (eventSeverity == 1)
-            {
-                numberOfFollowersUpdate(-7);
-                powerUpdate(-20);
-            }
-
-            else if (eventSeverity == 2)
-            {
-                numberOfFollowersUpdate(-7);
-                powerUpdate(-20);
-            }
-        }
-
-        else if (playerChoice == 5)
-        {
-            if (eventSeverity == 0)
-            {
-                numberOfFollowersUpdate(-7);
-                powerUpdate(0);
-            }
-
-            else if (eventSeverity == 1)
-            {
-                numberOfFollowersUpdate(-7);
-                powerUpdate(0);
-            }
-
-            else if (eventSeverity == 2)
-            {
-                numberOfFollowersUpdate(-7);
-                powerUpdate(0);
-            }
-        }
+		timerRunning = false;
+		UIMain.NewEvent("Repace discription",new string[]{"option1","option2"},new int[]{0,12},eventSeverity);
 
 
 
         
     }
 
+	public void BadEventEnd(int optionSelected,int eventSeverity){
+		timerRunning = true;
+		playerChoice = optionSelected;
+		if(playerChoice==1)
+		{
+			if(eventSeverity==0)
+			{
+				numberOfFollowersUpdate(-7);
+				powerUpdate(-5);
+			}
+			
+			else if(eventSeverity==1)
+			{
+				numberOfFollowersUpdate(-7);
+				powerUpdate(-5);
+			}
+			
+			else if(eventSeverity==2)
+			{
+				numberOfFollowersUpdate(-7);
+				powerUpdate(-5);
+			}
+		}
+		
+		else if (playerChoice == 2)
+		{
+			if (eventSeverity == 0)
+			{
+				numberOfFollowersUpdate(-7);
+				powerUpdate(-10);
+			}
+			
+			else if (eventSeverity == 1)
+			{
+				numberOfFollowersUpdate(-7);
+				powerUpdate(-10);
+			}
+			
+			else if (eventSeverity == 2)
+			{
+				numberOfFollowersUpdate(-7);
+				powerUpdate(-10);
+			}
+		}
+		
+		else if (playerChoice == 3)
+		{
+			if (eventSeverity == 0)
+			{
+				numberOfFollowersUpdate(-7);
+				powerUpdate(-15);
+			}
+			
+			else if (eventSeverity == 1)
+			{
+				numberOfFollowersUpdate(-7);
+				powerUpdate(-15);
+			}
+			
+			else if (eventSeverity == 2)
+			{
+				numberOfFollowersUpdate(-7);
+				powerUpdate(-15);
+			}
+		}
+		
+		else if (playerChoice == 4)
+		{
+			if (eventSeverity == 0)
+			{
+				numberOfFollowersUpdate(-7);
+				powerUpdate(-20);
+			}
+			
+			else if (eventSeverity == 1)
+			{
+				numberOfFollowersUpdate(-7);
+				powerUpdate(-20);
+			}
+			
+			else if (eventSeverity == 2)
+			{
+				numberOfFollowersUpdate(-7);
+				powerUpdate(-20);
+			}
+		}
+		
+		else if (playerChoice == 5)
+		{
+			if (eventSeverity == 0)
+			{
+				numberOfFollowersUpdate(-7);
+				powerUpdate(0);
+			}
+			
+			else if (eventSeverity == 1)
+			{
+				numberOfFollowersUpdate(-7);
+				powerUpdate(0);
+			}
+			
+			else if (eventSeverity == 2)
+			{
+				numberOfFollowersUpdate(-7);
+				powerUpdate(0);
+			}
+		}
+	}
+
     //Detalis on what happens in a neutral event
     void neutralEvent()
     {
 		followers.Calm ();
         Debug.Log("Neutral Event Occurred");
+		UIMain.NewEvent ("NeutralEvent",new string[0],new int[0],0);
     }
 
     //Details on what happens in a good event
@@ -187,15 +205,19 @@ public class MainEngine : MonoBehaviour
     {
 		followers.Celebrate ();
         Debug.Log("Good Event Occurred with severity of " + eventSeverity);
-        if(eventSeverity==0)
-            numberOfFollowersUpdate(5);
-
-        else if(eventSeverity==1)
-            numberOfFollowersUpdate(10);
-
-        else if (eventSeverity == 1)
-            numberOfFollowersUpdate(15);
+		UIMain.NewEvent ("Good event", new string[]{"option1","o2"}, new int[]{0,12}, eventSeverity * -1);
     }
+
+	public void GoodEventEnd(int optionSelected,int sevarity){
+		if(sevarity==0)
+			numberOfFollowersUpdate(5);
+		
+		else if(sevarity==1)
+			numberOfFollowersUpdate(10);
+		
+		else if (sevarity == 2)
+			numberOfFollowersUpdate(15);
+	}
 
     void numberOfFollowersUpdate(int k)
     {
@@ -236,7 +258,7 @@ public class MainEngine : MonoBehaviour
     //After an year ends i.e. timer expires, timer is reset to 360 seconds
     void reInitialization()
     {
-        yearTimer = 360.0f;
+        
         timeForSacrifice();
         eventCounter = Random.Range(0, 4);
         followersIncreaseTimes = 6;
@@ -258,8 +280,10 @@ public class MainEngine : MonoBehaviour
     void Update()
     {
        // Debug.Log(yearTimer);
-        yearTimer -= Time.deltaTime;
-
+		if (timerRunning == true)
+		{
+			yearTimer -= Time.deltaTime;
+		}
         //Resolution for month of January 
         if (yearTimer >= 330.0f && yearTimer < 360.0f)
         {

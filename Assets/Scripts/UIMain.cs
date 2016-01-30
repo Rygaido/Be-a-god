@@ -18,6 +18,8 @@ public class UIMain : MonoBehaviour
     [SerializeField]
     private Text discription;
 
+	private int severity;
+
     [SerializeField]
     private Canvas outcomeCanvas;
     [SerializeField]
@@ -33,7 +35,7 @@ public class UIMain : MonoBehaviour
     private State currentState = State.None;
 
 	void Start(){
-		UIMain.NewSac (10);
+		//UIMain.NewSac (10);
 	}
 
     private static UIMain singleton;
@@ -44,9 +46,9 @@ public class UIMain : MonoBehaviour
 
     //Called by gamelogic
     #region
-    public static void NewEvent(/*Event info*/)
+	public static void NewEvent (string discription, string[] options, int[] cost, int severity)
     {
-        singleton.NewEventP();
+		singleton.NewEventP(discription,options,cost,severity);
     }
 
     public static void NewOutcome(string outcome)
@@ -68,13 +70,22 @@ public class UIMain : MonoBehaviour
         //output int of index of option
 		Debug.Log ("OptionSelected");
 		NewOutcome ("Selected button :" + index);
+		if (severity == 0) {
+			//nutralEvent
+		} else if (severity > 0) {
+			//bad event
+			MainEngine.singleton.BadEventEnd (index,severity);
+		} else {
+			//good event
+			MainEngine.singleton.GoodEventEnd (index,severity * -1);
+		}
     }
 
     public void SacConfirmed()
     {
         if(numberInput.text.Length > 0)
         {
-			UIMain.NewEvent();
+			MainEngine.NewSacrificeMade(Mathf.Clamp(int.Parse(numberInput.text), 1, limit));
         }
         //output number chosen (fromInput field)
     }
@@ -89,7 +100,7 @@ public class UIMain : MonoBehaviour
     {
         if (numberInput.text.Length > 0)
         {
-            int value = Mathf.Clamp(int.Parse(numberInput.text), 0, limit);
+            int value = Mathf.Clamp(int.Parse(numberInput.text), 1, limit);
             numberInput.text = value.ToString();
         }
     }
@@ -98,7 +109,7 @@ public class UIMain : MonoBehaviour
     {
         if (numberInput.text.Length > 0)
         {
-            int value = Mathf.Clamp(int.Parse(numberInput.text) + 1, 0, limit);
+            int value = Mathf.Clamp(int.Parse(numberInput.text) + 1, 1, limit);
             numberInput.text = value.ToString();
         }
     }
@@ -107,16 +118,17 @@ public class UIMain : MonoBehaviour
     {
         if (numberInput.text.Length > 0)
         {
-            int value = Mathf.Clamp(int.Parse(numberInput.text) - 1, 0, limit);
+            int value = Mathf.Clamp(int.Parse(numberInput.text) - 1, 1, limit);
             numberInput.text = value.ToString();
         }
     }
 
-    private void NewEventP()
+	private void NewEventP(string discriptionText, string[] options, int[] optionCost, int severity)
     {
-        string discriptionText = "DiscriptionText";
-        string[] options = { "Option 1", "Option 2", "Option 3", "Option 4" };
-        int[] optionCost = { 5, 10, 20, 30 };
+		this.severity = severity;
+        //string discriptionText = "DiscriptionText";
+        //string[] options = { "Option 1", "Option 2", "Option 3", "Option 4" };
+        //int[] optionCost = { 5, 10, 20, 30 };
 
         currentState = State.Options;
         DisableCanvases();
@@ -169,6 +181,9 @@ public class UIMain : MonoBehaviour
 
     private void NewSacP(int limit)
     {
+		if (numberInput.text.Length > 0) {
+			numberInput.text = "1";
+		}
         currentState = State.Sac;
         DisableCanvases();
         sacMenuCanvas.enabled = true;
