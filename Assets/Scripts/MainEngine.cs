@@ -8,6 +8,7 @@ public class MainEngine : MonoBehaviour
     int eventCounter;
     static int numberofFollowers;
     static int powerLeft;
+    int followersIncreaseTimes;
 
     bool eventHasOccurredJan;
     bool eventHasOccurredFeb;
@@ -28,6 +29,7 @@ public class MainEngine : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        followersIncreaseTimes = 6;
         yearTimer = 360.0f;
         numberofFollowers = 100;
         powerLeft = 0;
@@ -110,6 +112,7 @@ public class MainEngine : MonoBehaviour
         yearTimer = 360.0f;
         timeForSacrifice();
         eventCounter = Random.Range(0, 4);
+        followersIncreaseTimes = 6;
         eventHasOccurredJan = false;
         eventHasOccurredFeb = false;
         eventHasOccurredMar = false;
@@ -139,6 +142,7 @@ public class MainEngine : MonoBehaviour
                 eventOccurred();
                 eventHasOccurredJan = true;
                 eventCounter--;
+                followersIncreaseRandomly();
               //  yearTimer = 330;
             }
         }
@@ -152,6 +156,7 @@ public class MainEngine : MonoBehaviour
                 eventOccurred();
                 eventCounter--;
                 eventHasOccurredFeb = true;
+                followersIncreaseRandomly();
              //   yearTimer = 300;
             }
         }
@@ -165,6 +170,7 @@ public class MainEngine : MonoBehaviour
                 eventOccurred();
                 eventCounter--;
                 eventHasOccurredMar = true;
+                followersIncreaseRandomly();
                // yearTimer = 270;
             }
         }
@@ -179,6 +185,7 @@ public class MainEngine : MonoBehaviour
                 eventOccurred();
                 eventCounter--;
                 eventHasOccurredApr = true;
+                followersIncreaseRandomly();
                // yearTimer = 240;
             }
         }
@@ -192,6 +199,7 @@ public class MainEngine : MonoBehaviour
                 eventOccurred();
                 eventCounter--;
                 eventHasOccurredMay = true;
+                followersIncreaseRandomly();
               //  yearTimer = 210;
             }
         }
@@ -205,7 +213,8 @@ public class MainEngine : MonoBehaviour
                 eventOccurred();
                 eventCounter--;
                 eventHasOccurredJun = true;
-               // yearTimer = 180;
+                followersIncreaseRandomly();
+                // yearTimer = 180;
             }
         }
 
@@ -218,6 +227,7 @@ public class MainEngine : MonoBehaviour
                 eventOccurred();
                 eventCounter--;
                 eventHasOccurredJul = true;
+                followersIncreaseRandomly();
                 //yearTimer = 150;
             }
         }
@@ -231,7 +241,8 @@ public class MainEngine : MonoBehaviour
                 eventOccurred();
                 eventCounter--;
                 eventHasOccurredAug = true;
-               // yearTimer = 120;
+                followersIncreaseRandomly();
+                // yearTimer = 120;
             }
         }
 
@@ -244,6 +255,7 @@ public class MainEngine : MonoBehaviour
                 eventOccurred();
                 eventCounter--;
                 eventHasOccurredSep = true;
+                followersIncreaseRandomly();
                 //yearTimer = 90;
             }
         }
@@ -257,6 +269,7 @@ public class MainEngine : MonoBehaviour
                 eventOccurred();
                 eventCounter--;
                 eventHasOccurredOct = true;
+                followersIncreaseRandomly();
                 //yearTimer = 60;
             }
         }
@@ -271,6 +284,7 @@ public class MainEngine : MonoBehaviour
                 eventOccurred();
                 eventCounter--;
                 eventHasOccurredNov = true;
+                followersIncreaseRandomly();
                 //yearTimer = 30;
             }
         }
@@ -284,6 +298,7 @@ public class MainEngine : MonoBehaviour
                 eventOccurred();
                 eventCounter--;
                 eventHasOccurredDec = true;
+                followersIncreaseRandomly();
                 //earTimer = 0;
             }
         }
@@ -298,5 +313,19 @@ public class MainEngine : MonoBehaviour
     void OnGUI()
     {
         GUI.Label(new Rect(10, 10, 100, 90), yearTimer.ToString());
+    }
+
+    void followersIncreaseRandomly()
+    {
+        if(followersIncreaseTimes>0)
+        {
+            int randomlyIncreaseFollowers = Random.Range(0, 3);
+            if (randomlyIncreaseFollowers == 2)
+            {
+                numberofFollowers += Random.Range(0, 3);
+                followersIncreaseTimes--;
+            }
+
+        }
     }
 }
