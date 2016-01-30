@@ -20,6 +20,6 @@ public class civilian_wander : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		speed = 
+		speed = 0;
 	}
 }
