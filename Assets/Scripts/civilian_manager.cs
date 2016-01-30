@@ -26,7 +26,9 @@ public class civilian_manager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		if (MainEngine.numberofFollowers != population) {
+			SetPopulation (MainEngine.numberofFollowers);
+		}
 	}
 
 	//sets the number of people on screen to match an integer

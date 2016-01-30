@@ -7,8 +7,8 @@ public class MainEngine : MonoBehaviour
 
     float yearTimer;
     int eventCounter;
-    static int numberofFollowers;
-    static int powerLeft;
+    public static int numberofFollowers;
+    public static int powerLeft;
     int followersIncreaseTimes;
     int playerChoice;
 	static bool timerRunning;
