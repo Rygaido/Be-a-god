@@ -23,9 +23,16 @@ public class civilian_wander : MonoBehaviour {
 
 	//static Random r = new Random();
 
+	public bool jumping = true;
+	float y0 = 0.0f;
+	float jumpHeight = 0.1f;
+	float j=0.0f;
+	bool falling=false;
+	float jumpSpeed=0.5f;
+
 	// Use this for initialization
 	void Start () {
-		
+		y0 = transform.position.y;	
 	}
 	
 	// Update is called once per frame
@@ -55,7 +62,29 @@ public class civilian_wander : MonoBehaviour {
 			stateTimer = Random.Range(stateTimerMin,stateTimerMax);
 		}
 
+		//make civs jump while walking, comment out to remove
+		jumping = (speed > 0);
 
+		if (jumping) {
+			int inverse = 1;
+			if (falling) {
+				inverse *= -1;
+			}
+
+			j += inverse * jumpSpeed * Time.deltaTime;
+			transform.position = new Vector3 (transform.position.x, y0 + j, transform.position.z);
+			if (j <= 0.0f) {
+				j = 0.0f;
+				falling = false;
+			} else if (j >= jumpHeight) {
+				j = jumpHeight;
+				falling = true;
+			}
+		} else if (j > 0.0f) {
+			j -= jumpSpeed * Time.deltaTime;
+			if(j < 0){j=0;}
+			transform.position = new Vector3 (transform.position.x, y0 + j, transform.position.z);
+		}
 	}
 
 	//constrains civilians to a square of size "boundary" from origin in all directions
