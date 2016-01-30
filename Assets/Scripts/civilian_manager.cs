@@ -71,4 +71,7 @@ public class civilian_manager : MonoBehaviour {
 		joy = true;
 		panic = false;
 	}
+	public void Calm(){
+		joy = panic = false;
+	}
 }

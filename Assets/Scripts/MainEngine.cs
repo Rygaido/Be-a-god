@@ -21,6 +21,10 @@ public class MainEngine : MonoBehaviour
     bool eventHasOccurredOct;
     bool eventHasOccurredNov;
     bool eventHasOccurredDec;
+
+	public GameObject civilianManager;
+	civilian_manager followers; //use followers' methods to add and subtract person objects and change emotion
+
     // Use this for initialization
     void Start()
     {
@@ -41,6 +45,8 @@ public class MainEngine : MonoBehaviour
         eventHasOccurredOct = false;
         eventHasOccurredNov = false;
         eventHasOccurredDec = false;
+
+		followers = civilianManager.GetComponent<civilian_manager> ();
     }
 
 
@@ -53,18 +59,21 @@ public class MainEngine : MonoBehaviour
     //@param is the severity of event, 0: mild 1: so-so 2:severe
     void badEvent(int eventSeverity)
     {
+		followers.Panic ();
         Debug.Log("Bad Event Occurred with severity of " + eventSeverity);
     }
 
     //Detalis on what happens in a neutral event
     void neutralEvent()
     {
+		followers.Calm ();
         Debug.Log("Neutral Event Occurred");
     }
 
     //Details on what happens in a good event
     void goodEvent(int eventSeverity)
     {
+		followers.Celebrate ();
         Debug.Log("Good Event Occurred with severity of " + eventSeverity);
     }
 
