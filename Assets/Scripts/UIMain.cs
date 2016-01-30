@@ -33,7 +33,7 @@ public class UIMain : MonoBehaviour
     private State currentState = State.None;
 
 	void Start(){
-		UIMain.NewOutcome ("anything");
+		UIMain.NewSac (10);
 	}
 
     private static UIMain singleton;
@@ -66,13 +66,15 @@ public class UIMain : MonoBehaviour
     public void SelectedOption(int index)
     {
         //output int of index of option
+		Debug.Log ("OptionSelected");
+		NewOutcome ("Selected button :" + index);
     }
 
     public void SacConfirmed()
     {
         if(numberInput.text.Length > 0)
         {
-
+			UIMain.NewEvent();
         }
         //output number chosen (fromInput field)
     }
