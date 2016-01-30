@@ -4,6 +4,8 @@ using UnityEngine.UI;
 //attached to main Canvas
 public class UIMain : MonoBehaviour
 {
+	[SerializeField]
+	private civilian_manager civilianManager;
 
     [SerializeField]
     private Canvas optionsMenuCanvas;
@@ -29,6 +31,10 @@ public class UIMain : MonoBehaviour
 
     enum State { Sac, Options, Outcome, None };
     private State currentState = State.None;
+
+	void Start(){
+		UIMain.NewOutcome ("anything");
+	}
 
     private static UIMain singleton;
     void Awake()
@@ -154,6 +160,9 @@ public class UIMain : MonoBehaviour
         outcome.text = text;
         DisableCanvases();
         outcomeCanvas.enabled = true;
+		optionsMenuCanvas.enabled = true;
+		
+		civilianManager.Calm();
     }
 
     private void NewSacP(int limit)
