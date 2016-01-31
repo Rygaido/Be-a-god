@@ -75,8 +75,9 @@ public class MainEngine : MonoBehaviour
         numberOfFollowersUpdate(-numberSaced);
         //numberofFollowers -= numberSaced;
 		powerLeft += numberSaced * 4;
-		//MainEngine.singleton.badEvent (1);
-	}
+        UIMain.PowerChanged(true, numberSaced * 4);
+        //MainEngine.singleton.badEvent (1);
+    }
 
     void timeForSacrifice()
     {
@@ -94,7 +95,7 @@ public class MainEngine : MonoBehaviour
 		timerRunning = false;
 		 rando = Random.Range (1, 21);
 
-        UIMain.NewEvent(chooserofeventts.ec.events[rando].badeventsvariation, new string[] { "pass", "option1", "option2", "option3", "option4" }, new int[] { 0, 5, 10, 15, 20 }, eventSeverity + 1); 
+        UIMain.NewEvent(chooserofeventts.ec.events[rando].badeventsvariation, new string[] { "pass", "option1", "option2", "option3", "option4" }, new int[] { 0, 5, 10, 15, 20 }, eventSeverity + 1,chooserofeventts.ec.events[rando].id); 
         //UIMain.NewEvent("Repace discription",new string[]{"option1","option2"},new int[]{0,12},eventSeverity);
 
 
@@ -415,7 +416,7 @@ public class MainEngine : MonoBehaviour
         
         followers.Calm ();
         Debug.Log("Neutral Event Occurred");
-		UIMain.NewEvent (chooserofeventts.Nec.events[0].neutraleventsvariation,new string[0],new int[0],0);
+		UIMain.NewEvent (chooserofeventts.Nec.events[0].neutraleventsvariation,new string[0],new int[0],0,-1);
         timerRunning = true;
     }
 
@@ -427,7 +428,7 @@ public class MainEngine : MonoBehaviour
 		//Grando = Random.Range (0, 15);
 		//timerRunning = false;
         Debug.Log("Good Event Occurred with severity of " + eventSeverity);
-		UIMain.NewEvent (chooserofeventts.Gec.events[0].goodeventsvariation,new string[0],new int[0],0);
+		UIMain.NewEvent (chooserofeventts.Gec.events[0].goodeventsvariation,new string[0],new int[0],0,-1);
 		//UIMain.NewEvent ("Good event", new string[]{"option1","o2"}, new int[]{0,12}, (1 +eventSeverity) * -1);
 		//UIMain.NewOutcome ("Good EventResolution");
         GoodEventEnd(0, eventSeverity);
@@ -457,11 +458,13 @@ public class MainEngine : MonoBehaviour
             totalFollowersLost -= k;
         }
         numberofFollowers += k;
+        UIMain.FollowerChanged(true, k);
     }
 
     void powerUpdate(int k)
     {
         powerLeft += k;
+        UIMain.PowerChanged(true, k);
     }
 
     //Details when event Occurs
@@ -766,7 +769,7 @@ public class MainEngine : MonoBehaviour
 
     void OnGUI()
     {
-        GUI.Label(new Rect(10, 10, 100, 90), yearTimer.ToString());
+        //GUI.Label(new Rect(10, 10, 100, 90), yearTimer.ToString());
     }
 
     void followersIncreaseRandomly()

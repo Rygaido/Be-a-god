@@ -9,7 +9,13 @@ public class UIMain : MonoBehaviour
     [SerializeField]
     private Transform followersDisplay;
     [SerializeField]
+    private Transform backGround;
+    [SerializeField]
     private GameObject text;
+
+    public Image backGroundImage;
+
+    public Sprite[] sprites;
 
 	[SerializeField]
 	private civilian_manager civilianManager;
@@ -64,7 +70,7 @@ public class UIMain : MonoBehaviour
     }
     private void PowerChangedP(bool bGreen, int number)
     {
-        GameObject go = Instantiate(text, followersDisplay.position, followersDisplay.rotation) as GameObject;
+        GameObject go = Instantiate(text, powerDisplay.position, followersDisplay.rotation) as GameObject;
         if (number > 0)
         {
             go.GetComponent<NumberChanged>().text = "+" + number;
@@ -75,6 +81,7 @@ public class UIMain : MonoBehaviour
             go.GetComponent<NumberChanged>().text = "-" + Mathf.Abs(number);
             go.GetComponent<NumberChanged>().color = Color.red;
         }
+        go.transform.parent = backGround;
     }
     private void FollowerChangedP(bool bGreen,int number)
     {
@@ -82,6 +89,7 @@ public class UIMain : MonoBehaviour
         if (number > 0)
         {
             go.GetComponent<NumberChanged>().text = "+" + number;
+            
             go.GetComponent<NumberChanged>().color = Color.green;
         }
         else
@@ -89,11 +97,12 @@ public class UIMain : MonoBehaviour
             go.GetComponent<NumberChanged>().text = "-" + Mathf.Abs(number);
             go.GetComponent<NumberChanged>().color = Color.red;
         }
+        go.transform.parent = backGround;
     }
 
-	public static void NewEvent (string discription, string[] options, int[] cost, int severity)
+	public static void NewEvent (string discription, string[] options, int[] cost, int severity,int picture)
     {
-		singleton.NewEventP(discription,options,cost,severity);
+		singleton.NewEventP(discription,options,cost,severity,picture);
     }
 
     public static void NewOutcome(string outcome)
@@ -115,15 +124,22 @@ public class UIMain : MonoBehaviour
         //output int of index of option
 		Debug.Log ("OptionSelected");
 		NewOutcome ("Selected button :" + index);
-		if (severity == 0) {
-			//nutralEvent
-		} else if (severity > 0) {
-			//bad event
-			MainEngine.singleton.BadEventEnd (index,severity-1);
-		} else {
-			//good event
-			MainEngine.singleton.GoodEventEnd (index,(severity * -1)-1);
-		}
+        if (currentState == State.Options)
+        {
+            if (severity == 0)
+            {
+                //nutralEvent
+            }
+            else if (severity > 0)
+            {
+                //bad event
+                MainEngine.singleton.BadEventEnd(index, severity - 1);
+            }
+            else {
+                //good event
+                MainEngine.singleton.GoodEventEnd(index, (severity * -1) - 1);
+            }
+        }
     }
 
     public void SacConfirmed()
@@ -131,7 +147,7 @@ public class UIMain : MonoBehaviour
         if(numberInput.text.Length > 0)
         {
 			MainEngine.NewSacrificeMade(Mathf.Clamp(int.Parse(numberInput.text), 1, limit));
-			UIMain.NewEvent("The Sacrifice Ritual went well",new string[0],new int[0],0);
+			UIMain.NewEvent("The Sacrifice Ritual went well",new string[0],new int[0],0,-1);
 			UIMain.NewOutcome("There was much blood");
         }
         //output number chosen (fromInput field)
@@ -170,12 +186,21 @@ public class UIMain : MonoBehaviour
         }
     }
 
-	private void NewEventP(string discriptionText, string[] options, int[] optionCost, int severity)
+	private void NewEventP(string discriptionText, string[] options, int[] optionCost, int severity,int picture)
     {
 		this.severity = severity;
         //string discriptionText = "DiscriptionText";
         //string[] options = { "Option 1", "Option 2", "Option 3", "Option 4" };
         //int[] optionCost = { 5, 10, 20, 30 };
+        if (picture != -1)
+        {
+            backGroundImage.sprite = sprites[picture];
+            backGroundImage.enabled = true;
+        }
+        else
+        {
+            backGroundImage.enabled = false;
+        }
 
         currentState = State.Options;
         DisableCanvases();

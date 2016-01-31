@@ -26,5 +26,9 @@ public class NumberChanged : MonoBehaviour {
         textObj.transform.position = startPosition + Vector2.up * yPosition.Evaluate((Time.time - st)*0.2f) * -100f;
         color.a = (1f-((Time.time - st) / maxTime));
         textObj.color = color;
+        if(((Time.time - st) / maxTime) >= 1)
+        {
+            Destroy(gameObject);
+        }
 	}
 }
