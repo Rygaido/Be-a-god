@@ -1,0 +1,211 @@
+fileFormatVersion: 2
+guid: 23e4c37eb0af6034e9f492c1527057bd
+timeCreated: 1454250890
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Backdrop
+    100002: Black
+    100004: Bush
+    100006: Camera
+    100008: Cloud
+    100010: Cube
+    100012: ELC AMX Hull
+    100014: ELC AMX Turret
+    100016: Fire
+    100018: Fireball
+    100020: Flames
+    100022: Flames.001
+    100024: Flames.002
+    100026: Grass
+    100028: Ground
+    100030: Ground_Large
+    100032: Lightning
+    100034: //RootNode
+    100036: Red
+    100038: RoadRailing
+    100040: Rock_Small1
+    100042: Rock_Snow
+    100044: Sun
+    100046: Tree_Evergreen
+    100048: Tree_Large
+    100050: Tree_Medium
+    100052: Tree_noleaves1
+    100054: Tree_Small
+    100056: Tree_Snow
+    100058: TreePath
+    100060: Yellow
+    400000: Backdrop
+    400002: Black
+    400004: Bush
+    400006: Camera
+    400008: Cloud
+    400010: Cube
+    400012: ELC AMX Hull
+    400014: ELC AMX Turret
+    400016: Fire
+    400018: Fireball
+    400020: Flames
+    400022: Flames.001
+    400024: Flames.002
+    400026: Grass
+    400028: Ground
+    400030: Ground_Large
+    400032: Lightning
+    400034: //RootNode
+    400036: Red
+    400038: RoadRailing
+    400040: Rock_Small1
+    400042: Rock_Snow
+    400044: Sun
+    400046: Tree_Evergreen
+    400048: Tree_Large
+    400050: Tree_Medium
+    400052: Tree_noleaves1
+    400054: Tree_Small
+    400056: Tree_Snow
+    400058: TreePath
+    400060: Yellow
+    2300000: Backdrop
+    2300002: Black
+    2300004: Bush
+    2300006: Cloud
+    2300008: Cube
+    2300010: ELC AMX Hull
+    2300012: ELC AMX Turret
+    2300014: Flames
+    2300016: Flames.001
+    2300018: Flames.002
+    2300020: Grass
+    2300022: Ground
+    2300024: Ground_Large
+    2300026: Lightning
+    2300028: Red
+    2300030: RoadRailing
+    2300032: Rock_Small1
+    2300034: Rock_Snow
+    2300036: Tree_Evergreen
+    2300038: Tree_Large
+    2300040: Tree_Medium
+    2300042: Tree_noleaves1
+    2300044: Tree_Small
+    2300046: Tree_Snow
+    2300048: TreePath
+    2300050: Yellow
+    3300000: Backdrop
+    3300002: Black
+    3300004: Bush
+    3300006: Cloud
+    3300008: Cube
+    3300010: ELC AMX Hull
+    3300012: ELC AMX Turret
+    3300014: Flames
+    3300016: Flames.001
+    3300018: Flames.002
+    3300020: Grass
+    3300022: Ground
+    3300024: Ground_Large
+    3300026: Lightning
+    3300028: Red
+    3300030: RoadRailing
+    3300032: Rock_Small1
+    3300034: Rock_Snow
+    3300036: Tree_Evergreen
+    3300038: Tree_Large
+    3300040: Tree_Medium
+    3300042: Tree_noleaves1
+    3300044: Tree_Small
+    3300046: Tree_Snow
+    3300048: TreePath
+    3300050: Yellow
+    4300000: Flames.002
+    4300002: Flames.001
+    4300004: Flames
+    4300006: Cube
+    4300008: RoadRailing
+    4300010: Backdrop
+    4300012: Yellow
+    4300014: Red
+    4300016: Black
+    4300018: Lightning
+    4300020: Cloud
+    4300022: Tree_Small
+    4300024: Rock_Snow
+    4300026: Rock_Small1
+    4300028: Tree_Medium
+    4300030: Tree_Large
+    4300032: Tree_Snow
+    4300034: Tree_noleaves1
+    4300036: Ground_Large
+    4300038: Grass
+    4300040: Ground
+    4300042: Bush
+    4300044: Tree_Evergreen
+    4300046: TreePath
+    4300048: ELC AMX Hull
+    4300050: ELC AMX Turret
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
