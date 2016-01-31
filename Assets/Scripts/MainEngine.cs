@@ -476,7 +476,7 @@ public class MainEngine : MonoBehaviour
         //Resolution for month of January 
         if (yearTimer >= 110.0f && yearTimer < 120.0f)
         {
-            int eventProbability = Random.Range(1, 3);
+            int eventProbability = 2;
             if (eventProbability == 2 && eventCounter > 0 && eventHasOccurredJan==false)
             {
 				Debug.Log(eventProbability);
@@ -496,7 +496,7 @@ public class MainEngine : MonoBehaviour
         //Resolution for month of February
         else if (yearTimer >= 100.0f && yearTimer < 110.0f )
         {
-            int eventProbability = Random.Range(1, 3);
+            int eventProbability = 2;
 
 			if (eventProbability == 2 && eventCounter > 0 && eventHasOccurredFeb == false)
             {
@@ -515,7 +515,7 @@ public class MainEngine : MonoBehaviour
         //Resolution for month of March
         else if (yearTimer >= 90.0f && yearTimer < 100.0f )
         {
-            int eventProbability = Random.Range(1, 3);
+            int eventProbability = 2;
 			if (eventProbability == 2 && eventCounter > 0 && eventHasOccurredMar == false)
             {
 				//Debug.Log(eventProbability);
@@ -536,7 +536,7 @@ public class MainEngine : MonoBehaviour
         //Resolution for month of April
         else if (yearTimer >= 80.0f && yearTimer < 90.0f )
         {
-            int eventProbability = Random.Range(1, 3);
+            int eventProbability = 2;
 
 			if (eventProbability == 2 && eventCounter > 0 && eventHasOccurredApr ==false)
             {
@@ -554,7 +554,7 @@ public class MainEngine : MonoBehaviour
         //Resolution for month of May
         else if (yearTimer >= 70.0f && yearTimer < 80.0f )
         {
-            int eventProbability = Random.Range(1, 3);
+            int eventProbability = 2;
 
 			if (eventProbability == 2 && eventCounter > 0 && eventHasOccurredMay == false)
             {
@@ -573,7 +573,7 @@ public class MainEngine : MonoBehaviour
         //Resolution for month of June
         else if (yearTimer >= 60.0f && yearTimer < 70.0f )
         {
-            int eventProbability = Random.Range(1, 3);
+            int eventProbability = 2;
 
 			if (eventProbability == 2 && eventCounter > 0 && eventHasOccurredJun == false)
             {
@@ -592,7 +592,7 @@ public class MainEngine : MonoBehaviour
         //Resolution for month of July
         else if (yearTimer >= 50.0f && yearTimer < 60.0f )
         {
-            int eventProbability = Random.Range(1, 3);
+            int eventProbability = 2;
 
 			if (eventProbability == 2 && eventCounter > 0 && eventHasOccurredJul == false)
             {
@@ -611,7 +611,7 @@ public class MainEngine : MonoBehaviour
         //Resolution for month of August
         else if (yearTimer >= 40.0f && yearTimer < 50.0f )
         {
-            int eventProbability = Random.Range(1, 3);
+            int eventProbability = 2;
 
 			if (eventProbability == 2 && eventCounter > 0 && eventHasOccurredAug == false)
             {
@@ -629,7 +629,7 @@ public class MainEngine : MonoBehaviour
         //Resolution for month of September
         else if (yearTimer >= 30.0f && yearTimer < 40.0f )
         {
-            int eventProbability = Random.Range(1, 3);
+            int eventProbability =2;
 
 			if (eventProbability == 2 && eventCounter > 0 && eventHasOccurredSep == false)
             {
@@ -648,7 +648,7 @@ public class MainEngine : MonoBehaviour
         //Resolution for month of October
         else if (yearTimer >= 20.0f && yearTimer < 30.0f )
         {
-            int eventProbability = Random.Range(1, 3);
+            int eventProbability = 2;
 
 			if (eventProbability == 2 && eventCounter > 0 && eventHasOccurredOct == false)
             {
@@ -668,7 +668,7 @@ public class MainEngine : MonoBehaviour
         //Resolution for month of November
         else if (yearTimer >= 10.0f && yearTimer < 20.0f )
         {
-            int eventProbability = Random.Range(1, 3);
+            int eventProbability = 2;
 
 			if (eventProbability == 2 && eventCounter > 0 && eventHasOccurredNov == false)
             {
@@ -687,7 +687,7 @@ public class MainEngine : MonoBehaviour
         //Resolution for month of December
         else if (yearTimer >= 0.0f && yearTimer < 10.0f )
         {
-            int eventProbability = Random.Range(1, 3);
+            int eventProbability = 2;
 
 			if (eventProbability == 2 && eventCounter > 0 && eventHasOccurredDec ==false)
             {
