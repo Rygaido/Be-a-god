@@ -14,8 +14,8 @@
 		<Events badeventsvariation="An earthquake shakes the ground, people are thrown off balance and buildings wobble.">
 			<Response1>With little effort, you apply force using a single finger to counter act the quake. The quake shivers in fear to your touch and dissipates instantly. Your people are as equally amazed as you are.</Response1>
 			<Response2>With little effort, you apply force using a single finger to counter act the quake. The quake ceased in isolated locations.</Response2>
-			<Response3>Levitation</Response3>
-			<Response4>Failed levitation</Response4>
+			<Response3>With moderate effort, you lift your people and their property off the ground a considerable amount. They watch in awe as the trees shed their leaves. You then softly move them back down, they sing your name unto the night.</Response3>
+			<Response4>Appearing to your thrown a little late so work, you realize that your people are in trouble. With haste, you quickly flick your wrist upward and send your people flying. For some reason you thought this was a good idea. Some of your followers who were outside perished while those inside suffered injuries.</Response4>
 			<Response5>You throw a mighty punch to the earth in the quakes opposite direction. Your punch was spot on and the quake quells, your people praise your strength and sharp thinking.</Response5>
 			<Response6>You throw a mighty punch to the earth in the quakes opposite direction. Unfortunately, your form was a little shaky and the quake only got stronger.</Response6>
 			<Response7>Stretching out your hands, you manage to shake the Earth in perfect harmony against the the quake. Your followers end up feeling none of the quakes strength while those in other areas are tossed around violently. Conveniently, they are all non-followers.</Response7>
@@ -25,7 +25,7 @@
 			<Response1>You perform a rite on your followers to prepare them for hibernation as the blizzard approaches. Sometime after the blizzard you nearly forgot about your followers. You quickly use the Sacred Air horn and wake up your followers to enjoy the warm Spring air.</Response1>
 			<Response2>You perform a rite on your followers to prepare them for hibernation as the blizzard approaches. However, you forgot to wake them up afterwards and some of your followers starve to death.</Response2>
 			<Response3>You send down Holy Shovels of Shoveling which have the ability to quickly cut through snow and (make it feel light as a feather). Knowing that your followers aren't immortal, you attach balloons to each shovel to allow for a safe decent.</Response3>
-			<Response4>You send down Holy Shovels of Shoveling which have the ability to quickly cut through snow and (make it feel light as a feather). Unfortunately, the Holy Shovels of Shoveling fall from the heavens at unsafe speeds resulting in impalment.</Response4>
+			<Response4>You send down Holy Shovels of Shoveling which have the ability to quickly cut through snow and (make it feel light as a feather). Unfortunately, the Holy Shovels of Shoveling fall from the heavens at unsafe speeds resulting in impalement.</Response4>
 			<Response5>You unleash a fire breathing dragon which has been trained for 7 God years.  With precision and accuracy, the dragon breaths fire in specific areas careful to avoid your followers. Your followers are astonished by this act and praise Your Grace.</Response5>
 			<Response6>You unleash a fire breathing dragon it is untamed but you believe in it.  Due to your negligence, the dragon roasts your followers, however, the snow is clear.</Response6>
 			<Response7>You focus energy from the sun at your peoples land for a few seconds to melt snow. Your followers are relieved that their crops will be spared.</Response7>
@@ -82,7 +82,7 @@
 			<Response8>BLANK</Response8>
 		</Events>
 		<Events badeventsvariation="A neighboring nation has disrupted your peoples thousand year Yo-Yo trade route.">
-            <Response1>You honestly could care less about your people's Yo-Yo trade route as you've recently gotten into Cubing. However, you decide to place a hastily put together vision in the trade masters head in which he slides four inflatable life savers under each leg of a camel in preparation for sea travel as an alternate route. Trade continues again but at a slower pace.</Response1>
+			<Response1>You honestly could care less about your people's Yo-Yo trade route as you've recently gotten into Cubing. However, you decide to place a hastily put together vision in the trade masters head in which he slides four inflatable life savers under each leg of a camel in preparation for sea travel as an alternate route. Trade continues again but at a slower pace.</Response1>
 			<Response2>You honestly could care less about your people's Yo-Yo trade route as you've recently gotten into Cubing. However, you decide to place a hastily put together vision in the trade masters head in which he slides four inflatable life savers under each leg of a camel in preparation for sea travel as an alternate route. The trade master poorly interprets the vision (???)</Response2>
 			<Response3>You attempt to conjure up a mirage of the Yo-Yo merchants in front of the attackers as a distraction for the attackers. The attackers easily fall for the mirage, when they finally reach the faux merchants, they are presented with stacks of Yo-Yo catalogues which the attackers never really took the time to look at. They are now interested in opening a trade route with your people.</Response3>
 			<Response4>You attempt to conjure up a mirage of the Yo-Yo merchants in front of the attackers as a distraction for the attackers. One of the attackers uses their binoculars only to prove that the mirage is nothing but a stack of Yo-Yo catalogues. The attackers are infuriated and now have a personal vendetta against Yo-Yo's and anyone who trades them.</Response4>
@@ -90,115 +90,6 @@
 			<Response6>As unimaginative as it may sound, you part the waves of a nearby ocean indefinitely. Unfortunately, you start the wave parting too close to your people's seaport, as a result, essential fishing ships and other vessels topple over. Your people starve… because of your obsession for Yo-Yo's. </Response6>
 			<Response7>To eliminate the problem completely, you decide to rain meteors amongst the neighboring nation. Despite the neighboring nation committing multiple atrocities, they did not think that they would perish due to a children's toy. They are eliminated completely and the trade route resumes.</Response7>
 			<Response8>To eliminate the problem completely, you decide to rain meteors amongst the neighboring nation. Unbeknownst to you, upper atmosphere winds of approximately 800 miles per hour hurl the meteors off their intended path and end up hitting your followers land. The thousand year old Yo-Yo shop is damaged indefinitely. good job</Response8>
-			
-		</Events>
-		<Events badeventsvariation="A neighboring nation has initiated an attack against your people. The cause seems to come from their crushing defeat at the last sports ball match.">
-			<Response1>BLANK</Response1>
-			<Response2>BLANK</Response2>
-			<Response3>BLANK</Response3>
-			<Response4>BLANK</Response4>
-			<Response5>BLANK</Response5>
-			<Response6>BLANK</Response6>
-			<Response7>BLANK</Response7>
-			<Response8>BLANK</Response8>
-		</Events>
-		<Events badeventsvariation="Giant robots, who are more than meets the iris, descend from the heavens.">
-			<Response1>As the giant robots descend, you quickly replace the ground below them with quicksand. Your followers fear quickly turns into laughter.</Response1>
-			<Response2>You summon a drizzle of rain. The robots quickly short circuit and explode.  A few unlucky followers were recipients of shrapnel to their cranial area.</Response2>
-			<Response3>You send a deadly plague to exterminate the robots, however, the robots are not affected. Your followers become deathly ill.</Response3>
-			<Response4>You perform you roll as the "God of Rock"  by blowing the theoretical roof off. The robots break down in tears according to your magnificent rifts and chords. They leave with intentions of sharing divine tunes with other robot citizens. Your followers are spared. </Response4>
-			<Response5>You open a time rift from another dimension and summon the holy tank ready for command by your people.</Response5>
-			<Response6>You smite the giant robot with a bolt of lightning, with its batteries recharged it moves on its way for destruction.</Response6>
-			<Response7>You snap your fingers and the robots spontaneously explode. You quietly yet confidently say "got 'em" as the accompanied wind blows shrapnel into a nearby non-worshiping nation.</Response7>
-			<Response8>You snap your fingers and the robots spontaneously explode. You quietly yet confidently say "got 'em… oh wait" as the lack of wind allows shrapnel to rain down on your followers.</Response8>
-		</Events>
-		<Events badeventsvariation="Zombie apoc">
-			<Response1>BLANK</Response1>
-			<Response2>BLANK</Response2>
-			<Response3>Bears</Response3>
-			<Response4>BLANK</Response4>
-			<Response5>BLANK</Response5>
-			<Response6>BLANK</Response6>
-			<Response7>BLANK</Response7>
-			<Response8>BLANK</Response8>
-		</Events>
-		<Events badeventsvariation="Guy with glowing red stick">
-			<Response1>BLANK</Response1>
-			<Response2>BLANK</Response2>
-			<Response3>BLANK</Response3>
-			<Response4>BLANK</Response4>
-			<Response5>BLANK</Response5>
-			<Response6>BLANK</Response6>
-			<Response7>BLANK</Response7>
-			<Response8>BLANK</Response8>
-		</Events>
-		<Events badeventsvariation="Nothing incredible has happened lately. Your people are bored and complaining, one of them is kicking a tumble weed.">
-			<Response1>Using your brush of magnificence, you paint the sky with a marvelous rainbow. Your people enjoy the sight and praise Your Grace.</Response1>
-			<Response2>You hastily conjure up a clown and have him appear upon your people. Your people feel rather uncomfortable around this clown who seems to be quite fond of spoons. All of his jokes have something to do with spoons.</Response2>
-			<Response3>In an act of generosity, you drip water from your chalice upon the village crops. The villagers rejoice in their harvest.</Response3>
-			<Response5>BLANK</Response5>
-			<Response6>You strike down one of your followers with a brilliant flash of lightning. They certainly aren't bored anymore.</Response6>
-			<Response8>In a fit of anger, you rain fire down upon the villagers! Are they not entertained?</Response8>
-		</Events>
-		<Events badeventsvariation="A large number of sheep begin to appear within your peoples town.">
-			<Response1>BLANK</Response1>
-			<Response2>BLANK</Response2>
-			<Response3>BLANK</Response3>
-			<Response4>BLANK</Response4>
-			<Response5>BLANK</Response5>
-			<Response6>BLANK</Response6>
-			<Response7>BLANK</Response7>
-			<Response8>BLANK</Response8>
-		</Events>
-		<Events badeventsvariation="WILDFIRE">
-			<Response1>BLANK</Response1>
-			<Response2>BLANK</Response2>
-			<Response3>BLANK</Response3>
-			<Response4>BLANK</Response4>
-			<Response5>BLANK</Response5>
-			<Response6>BLANK</Response6>
-			<Response7>BLANK</Response7>
-			<Response8>BLANK</Response8>
-		</Events>
-		<Events badeventsvariation="One follower claims to be a reincarnation of Your Grace and is speaking in your place. (?)">
-			<Response1>BLANK</Response1>
-			<Response2>BLANK</Response2>
-			<Response3>BLANK</Response3>
-			<Response4>BLANK</Response4>
-			<Response5>BLANK</Response5>
-			<Response6>BLANK</Response6>
-			<Response7>BLANK</Response7>
-			<Response8>BLANK</Response8>
-		</Events>
-		<Events badeventsvariation="SANDWORM">
-			<Response1>BLANK</Response1>
-			<Response2>BLANK</Response2>
-			<Response3>BLANK</Response3>
-			<Response4>BLANK</Response4>
-			<Response5>BLANK</Response5>
-			<Response6>BLANK</Response6>
-			<Response7>You summon the infamous SAND BIRD which you got as a gift from a merchant who is totally not suspicious which also sold SAND CATS. The Sand Bird quickly swoops in and snatches the Sand Worm. Your followers cannot believe what just happened and place all the (deserved) effort on Your Grace.</Response7>
-			<Response8>BLANK</Response8>
-		</Events>
-		<Events badeventsvariation="PARALLEL DIMENSION OPENS">
-			<Response1>BLANK</Response1>
-			<Response2>BLANK</Response2>
-			<Response3>BLANK</Response3>
-			<Response4>BLANK</Response4>
-			<Response5>BLANK</Response5>
-			<Response6>BLANK</Response6>
-			<Response7>BLANK</Response7>
-			<Response8>BLANK</Response8>
-		</Events>
-		<Events badeventsvariation="DRAGON ATTACKS CITY">
-			<Response1>undead mage?</Response1>
-			<Response2>BLANK</Response2>
-			<Response3>BLANK</Response3>
-			<Response4>BLANK</Response4>
-			<Response5>BLANK</Response5>
-			<Response6>BLANK</Response6>
-			<Response7>BLANK</Response7>
-			<Response8>Unleash own dragon to fight dragon, many casualties but got to watch a dragon fight</Response8>
 		</Events>
 	</Badevents>
 </BadeventsCollection>

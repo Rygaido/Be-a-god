@@ -6,6 +6,7 @@ public class MainEngine : MonoBehaviour
 	public static MainEngine singleton;
 
     float yearTimer;
+    int rando;
     int eventCounter;
     public static int numberofFollowers;
     public static int powerLeft;
@@ -76,20 +77,15 @@ public class MainEngine : MonoBehaviour
 		followers.Panic ();
         Debug.Log("Bad Event Occurred with severity of " + eventSeverity);
 		timerRunning = false;
-		int rando = Random.Range (1, 3);
-		if (rando == 1) {
-			UIMain.NewEvent (chooserofeventts.ec.events [0].badeventsvariation, new string[]{"pass","option1","option2","option3","option4"}, new int[]{0,5,10,15,20}, eventSeverity + 1);
-		} 
-		else 
-		{
-			UIMain.NewEvent (chooserofeventts.ec.events [1].badeventsvariation, new string[]{"pass","option1","option2","option3","option4"}, new int[]{0,5,10,15,20}, eventSeverity + 1);
-		}
-		
-		//UIMain.NewEvent("Repace discription",new string[]{"option1","option2"},new int[]{0,12},eventSeverity);
+		 rando = Random.Range (1, 21);
+
+        UIMain.NewEvent(chooserofeventts.ec.events[rando].badeventsvariation, new string[] { "pass", "option1", "option2", "option3", "option4" }, new int[] { 0, 5, 10, 15, 20 }, eventSeverity + 1); 
+
+        //UIMain.NewEvent("Repace discription",new string[]{"option1","option2"},new int[]{0,12},eventSeverity);
 
 
 
-        
+
     }
 
 	public void BadEventEnd(int optionSelected,int eventSeverity){
@@ -105,7 +101,7 @@ public class MainEngine : MonoBehaviour
 				int randomResponse = Random.Range(1,11);
 				if(randomResponse <=8)
 				{
-					UIMain.NewOutcome(chooserofeventts.ec.events[1].response1);
+					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response1);
 
 					followersChange(1);
 				}
@@ -113,7 +109,7 @@ public class MainEngine : MonoBehaviour
 				else 
 				{
 
-					UIMain.NewOutcome(chooserofeventts.ec.events[1].response2);
+					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response2);
 
 					followersChange(-3);
 				}
@@ -126,14 +122,14 @@ public class MainEngine : MonoBehaviour
 				int randomResponse = Random.Range(1,11);
 				if(randomResponse <= 6)
 				{
-					UIMain.NewOutcome(chooserofeventts.ec.events[1].response1);
+					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response1);
 
 					followersChange(1);
 				}
 				
 				else 
 				{
-					UIMain.NewOutcome(chooserofeventts.ec.events[1].response2);
+					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response2);
 
 					followersChange(-7);
 				}
@@ -147,7 +143,7 @@ public class MainEngine : MonoBehaviour
 				if(randomResponse <=2)
 				{
 
-					UIMain.NewOutcome(chooserofeventts.ec.events[1].response1);
+					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response1);
 
 					followersChange(1);
 				}
@@ -155,7 +151,7 @@ public class MainEngine : MonoBehaviour
 				else 
 				{
 
-					UIMain.NewOutcome(chooserofeventts.ec.events[1].response2);
+					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response2);
 
 					followersChange(-5);
 				}
@@ -173,7 +169,7 @@ public class MainEngine : MonoBehaviour
 				if(randomResponse<=6)
 				{
 					
-					UIMain.NewOutcome(chooserofeventts.ec.events[1].response3);
+					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response3);
 
 					followersChange(2);
 				}
@@ -181,7 +177,7 @@ public class MainEngine : MonoBehaviour
 				else 
 				{
 					
-					UIMain.NewOutcome(chooserofeventts.ec.events[1].response4);
+					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response4);
 
 					followersChange(-4);
 				}
@@ -195,7 +191,7 @@ public class MainEngine : MonoBehaviour
 				if(randomResponse <=5)
 				{
 					
-					UIMain.NewOutcome(chooserofeventts.ec.events[1].response3);
+					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response3);
 
 					followersChange(2);
 				}
@@ -203,7 +199,7 @@ public class MainEngine : MonoBehaviour
 				else 
 				{
 					
-					UIMain.NewOutcome(chooserofeventts.ec.events[1].response4);
+					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response4);
 
 					followersChange(-5);
 				}
@@ -217,14 +213,14 @@ public class MainEngine : MonoBehaviour
 				if(randomResponse <=4)
 				{
 					
-					UIMain.NewOutcome(chooserofeventts.ec.events[1].response3);
+					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response3);
 					followersChange(2);
 				}
 				
 				else 
 				{
 					
-					UIMain.NewOutcome(chooserofeventts.ec.events[1].response4);
+					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response4);
 					followersChange(-8);
 				}
 			}
@@ -240,14 +236,14 @@ public class MainEngine : MonoBehaviour
 				if(randomResponse <=4)
 				{
 					
-					UIMain.NewOutcome(chooserofeventts.ec.events[1].response5);
+					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response5);
 					followersChange(4);
 				}
 				
 				else 
 				{
 					
-					UIMain.NewOutcome(chooserofeventts.ec.events[1].response6);
+					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response6);
 					followersChange(-6);
 				}
 			}
@@ -260,14 +256,14 @@ public class MainEngine : MonoBehaviour
 				if(randomResponse <=5)
 				{
 					
-					UIMain.NewOutcome(chooserofeventts.ec.events[1].response5);
+					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response5);
 					followersChange(3);
 				}
 				
 				else 
 				{
 					
-					UIMain.NewOutcome(chooserofeventts.ec.events[1].response6);
+					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response6);
 					followersChange(-4);
 				}
 			}
@@ -280,14 +276,14 @@ public class MainEngine : MonoBehaviour
 				if(randomResponse <=6)
 				{
 					
-					UIMain.NewOutcome(chooserofeventts.ec.events[1].response5);
+					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response5);
 					followersChange(3);
 				}
 				
 				else 
 				{
 					
-					UIMain.NewOutcome(chooserofeventts.ec.events[1].response6);
+					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response6);
 					followersChange(-4);
 				}
 			}
@@ -303,14 +299,14 @@ public class MainEngine : MonoBehaviour
 				if(randomResponse <=2)
 				{
 					
-					UIMain.NewOutcome(chooserofeventts.ec.events[1].response7);
+					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response7);
 					followersChange(7);
 				}
 				
 				else 
 				{
 					
-					UIMain.NewOutcome(chooserofeventts.ec.events[1].response8);
+					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response8);
 					followersChange(-10);
 				}
 			}
@@ -323,14 +319,14 @@ public class MainEngine : MonoBehaviour
 				if(randomResponse <=4)
 				{
 					
-					UIMain.NewOutcome(chooserofeventts.ec.events[1].response7);
+					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response7);
 					followersChange(6);
 				}
 				
 				else 
 				{
 					
-					UIMain.NewOutcome(chooserofeventts.ec.events[1].response8);
+					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response8);
 					followersChange(-7);
 				}
 			}
@@ -343,14 +339,14 @@ public class MainEngine : MonoBehaviour
 				if(randomResponse <=8)
 				{
 					
-					UIMain.NewOutcome(chooserofeventts.ec.events[1].response7);
+					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response7);
 					followersChange(4);
 				}
 				
 				else 
 				{
 					
-					UIMain.NewOutcome(chooserofeventts.ec.events[1].response8);
+					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response8);
 					followersChange(-3);
 				}
 			}
