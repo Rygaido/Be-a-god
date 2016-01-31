@@ -34,8 +34,11 @@ public class civilian_wander : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		y0 = transform.position.y;	
-	}
+        
+        Renderer rend = GetComponent<MeshRenderer>();
+        y0 = transform.position.y;
+        rend.material.color = new Color(Random.Range(0.2f, 1.0f), Random.Range(0.2f, 1.0f), Random.Range(0.2f, 1.0f));
+    }
 	
 	// Update is called once per frame
 	void Update () {
