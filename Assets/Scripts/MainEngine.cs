@@ -40,7 +40,7 @@ public class MainEngine : MonoBehaviour
         powerLeft = 0;
 		timeForSacrifice();
         
-        eventCounter = 4;
+        eventCounter = 12;
         eventHasOccurredJan = false;
         eventHasOccurredFeb = false;
         eventHasOccurredMar = false;
@@ -60,7 +60,7 @@ public class MainEngine : MonoBehaviour
 	public static void NewSacrificeMade(int numberSaced){
 		timerRunning = true;
 		numberofFollowers -= numberSaced;
-		powerLeft += numberSaced * 2;
+		powerLeft += numberSaced * 4;
 		//MainEngine.singleton.badEvent (1);
 	}
 
@@ -124,14 +124,14 @@ public class MainEngine : MonoBehaviour
 				{
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response1);
 
-					followersChange(1);
+					followersChange(2);
 				}
 				
 				else 
 				{
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response2);
 
-					followersChange(-7);
+					followersChange(-9);
 				}
 			}
 			
@@ -145,7 +145,7 @@ public class MainEngine : MonoBehaviour
 
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response1);
 
-					followersChange(1);
+					followersChange(4);
 				}
 				
 				else 
@@ -153,7 +153,7 @@ public class MainEngine : MonoBehaviour
 
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response2);
 
-					followersChange(-5);
+					followersChange(-14);
 				}
 
 			}
@@ -171,7 +171,7 @@ public class MainEngine : MonoBehaviour
 					
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response3);
 
-					followersChange(2);
+					followersChange(4);
 				}
 				
 				else 
@@ -179,7 +179,7 @@ public class MainEngine : MonoBehaviour
 					
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response4);
 
-					followersChange(-4);
+					followersChange(-8);
 				}
 			}
 			
@@ -193,7 +193,7 @@ public class MainEngine : MonoBehaviour
 					
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response3);
 
-					followersChange(2);
+					followersChange(4);
 				}
 				
 				else 
@@ -201,7 +201,7 @@ public class MainEngine : MonoBehaviour
 					
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response4);
 
-					followersChange(-5);
+					followersChange(-4);
 				}
 			}
 			
@@ -214,14 +214,14 @@ public class MainEngine : MonoBehaviour
 				{
 					
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response3);
-					followersChange(2);
+					followersChange(6);
 				}
 				
 				else 
 				{
 					
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response4);
-					followersChange(-8);
+					followersChange(-12);
 				}
 			}
 		}
@@ -237,14 +237,14 @@ public class MainEngine : MonoBehaviour
 				{
 					
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response5);
-					followersChange(4);
+					followersChange(6);
 				}
 				
 				else 
 				{
 					
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response6);
-					followersChange(-6);
+					followersChange(-3);
 				}
 			}
 			
@@ -257,7 +257,7 @@ public class MainEngine : MonoBehaviour
 				{
 					
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response5);
-					followersChange(3);
+					followersChange(6);
 				}
 				
 				else 
@@ -277,14 +277,14 @@ public class MainEngine : MonoBehaviour
 				{
 					
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response5);
-					followersChange(3);
+					followersChange(8);
 				}
 				
 				else 
 				{
 					
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response6);
-					followersChange(-4);
+					followersChange(-8);
 				}
 			}
 		}
@@ -300,7 +300,7 @@ public class MainEngine : MonoBehaviour
 				{
 					
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response7);
-					followersChange(7);
+					followersChange(14);
 				}
 				
 				else 
@@ -320,7 +320,7 @@ public class MainEngine : MonoBehaviour
 				{
 					
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response7);
-					followersChange(6);
+					followersChange(10);
 				}
 				
 				else 
@@ -333,27 +333,28 @@ public class MainEngine : MonoBehaviour
 			
 			else if (eventSeverity == 2)
 			{
-				numberOfFollowersUpdate(-7);
+				
 				powerUpdate(-20);
 				int randomResponse = Random.Range(1,11);
 				if(randomResponse <=8)
 				{
 					
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response7);
-					followersChange(4);
+					followersChange(8);
 				}
 				
 				else 
 				{
 					
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response8);
-					followersChange(-3);
+					followersChange(-13);
 				}
 			}
 		}
 		
 		else if (playerChoice == 0)
 		{
+            Debug.Log("Pass Selected");
 			if (eventSeverity == 0)
 			{
 				//numberOfFollowersUpdate(-7);
@@ -380,9 +381,11 @@ public class MainEngine : MonoBehaviour
     //Detalis on what happens in a neutral event
     void neutralEvent()
     {
-		followers.Calm ();
+        
+        followers.Calm ();
         Debug.Log("Neutral Event Occurred");
 		UIMain.NewEvent ("NeutralEvent",new string[0],new int[0],0);
+        timerRunning = true;
     }
 
     //Details on what happens in a good event
@@ -395,8 +398,10 @@ public class MainEngine : MonoBehaviour
 		UIMain.NewOutcome ("Good EventResolution");
     }
 
-	public void GoodEventEnd(int optionSelected,int sevarity){
-		if(sevarity==0)
+	public void GoodEventEnd(int optionSelected,int sevarity)
+    {
+        
+        if (sevarity==0)
 			numberOfFollowersUpdate(5);
 
 		
@@ -405,7 +410,8 @@ public class MainEngine : MonoBehaviour
 		
 		else if (sevarity == 2)
 			numberOfFollowersUpdate(15);
-	}
+        timerRunning = true;
+    }
 
     void numberOfFollowersUpdate(int k)
     {
@@ -425,7 +431,7 @@ public class MainEngine : MonoBehaviour
 
         if (eventType > 3)
         {
-            int eventSeverity = Random.Range(0, 2);
+            int eventSeverity = Random.Range(0, 3);
             badEvent(eventSeverity);
         }
 
@@ -448,7 +454,7 @@ public class MainEngine : MonoBehaviour
     {
         
         timeForSacrifice();
-		eventCounter = 4;
+		eventCounter = 12;
 		yearTimer = 120.0f;
         followersIncreaseTimes = 6;
         eventHasOccurredJan = false;
@@ -708,6 +714,12 @@ public class MainEngine : MonoBehaviour
             reInitialization();
         }
 
+        if(numberofFollowers <=0)
+        {
+            
+            Application.LoadLevel(Application.loadedLevel + 1);
+        }
+
     }
 
     void OnGUI()
@@ -731,10 +743,31 @@ public class MainEngine : MonoBehaviour
 
 
 	float randomPercentage(int average){
-		return Random.Range (average - 1, average + 1) * 0.01f;
+        if(numberofFollowers < 20)
+        {
+            if (average > 0)
+            {
+                average += 20;
+            }
+            else
+            {
+                average -= 20;
+            }
+        }
+		return Random.Range (average - 1, average + 2) * 0.01f;
 	}
 	void followersChange(int averagePercentage){
-		int followersIncrease=(int)(randomPercentage(averagePercentage)*numberofFollowers);
+        int followersIncrease;
+        float change = randomPercentage(averagePercentage) * numberofFollowers;
+        if(change >= 0)
+        {
+            followersIncrease = (int)Mathf.Ceil(change);
+        }
+        else
+        {
+            followersIncrease = (int)Mathf.Floor(change);
+        }
+		
 		numberOfFollowersUpdate(followersIncrease);
 	}
 }

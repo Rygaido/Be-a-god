@@ -3,6 +3,8 @@ using System.Collections;
 
 public class levelLoader : MonoBehaviour {
 
+    public GameObject[] instructionTexts;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -16,5 +18,13 @@ public class levelLoader : MonoBehaviour {
     public void LoadLevel(int level)
     {
         Application.LoadLevel(level);
+    }
+
+    public void InstructionText()
+    {
+        for(int i = 0; i < instructionTexts.Length; i++)
+        {
+            instructionTexts[i].SetActive(true);
+        }
     }
 }
