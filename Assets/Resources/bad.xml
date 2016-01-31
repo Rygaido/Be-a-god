@@ -16,8 +16,8 @@
 			<id>2</id>
 			<Response1>With little effort, you apply force using a single finger to counter act the quake. The quake shivers in fear to your touch and dissipates instantly. Your people are as equally amazed as you are.</Response1>
 			<Response2>With little effort, you apply force using a single finger to counter act the quake. The quake ceased in isolated locations.</Response2>
-			<Response3>Levitation</Response3>
-			<Response4>Failed levitation</Response4>
+			<Response3>You perform levitation rising your followers out of the DANGER ZONE! They rejoice in your miraculous abilities of levitationing.</Response3>
+			<Response4>You perform levitation rising your followers out of the DANGER ZONE! However, you raise them too high and some of them may have been lost in orbit!</Response4>
 			<Response5>You throw a mighty punch to the earth in the quakes opposite direction. Your punch was spot on and the quake quells, your people praise your strength and sharp thinking.</Response5>
 			<Response6>You throw a mighty punch to the earth in the quakes opposite direction. Unfortunately, your form was a little shaky and the quake only got stronger.</Response6>
 			<Response7>Stretching out your hands, you manage to shake the Earth in perfect harmony against the the quake. Your followers end up feeling none of the quakes strength while those in other areas are tossed around violently. Conveniently, they are all non-followers.</Response7>
@@ -102,13 +102,14 @@
 		</Events>
 		<Events badeventsvariation="A neighboring nation has initiated an attack against your people. The cause seems to come from their crushing defeat at the last sports ball match.">
 			<id>9</id>
-			<Response2>blank</Response2>
-			<Response3>blank</Response3>
-			<Response4>blank</Response4>
-			<Response5>blank</Response5>
-			<Response6>blank</Response6>
-			<Response7>blank</Response7>
-			<Response8>blank</Response8>
+			<Response1>You pelt the attackers with a rainstorm of sportsballs of varying sizes. The attackers flee in shame!</Response1>
+			<Response2>You pelt the attackers with a rainstorm of sportsballs of varying sizes. The attackers become more angry! You should not have used the soft sportsballs…</Response2>
+			<Response3>You give the attackers a plague of poor depth perception such that they can never play sports ball again! The subsequent invasion missed.</Response3>
+			<Response4>You give the attackers a plague of poor depth perception such that they can never play sports ball again! By some off chance, they still managed to hit the broad side of your follower territory.</Response4>
+			<Response5>You unleash a sports dragon which is a fire breathing dragon wearing a sports jersey of your followers sportsball team. The attackers fight back with their sports skills but the dragon eats them.</Response5>
+			<Response6>You unleash a sports dragon which is a fire breathing dragon wearing a sports jersey of your followers sportsball team. However, the dragon has stepped on the foot of one of the other attackers and they call penalty! The attackers win by default.</Response6>
+			<Response7>You smite the attackers with flaming sports balls. There were no survivors.</Response7>
+			<Response8>You smite the attackers with flaming sports balls. There were no survivors on both sides. You told your people to dodge, but they aren't that good.</Response8>
 		</Events>
 		<Events badeventsvariation="Giant robots, who are more than meets the iris, descend from the heavens.">
 			<id>10</id>
@@ -121,7 +122,7 @@
 			<Response7>You snap your fingers and the robots spontaneously explode. You quietly yet confidently say "got 'em" as the accompanied wind blows shrapnel into a nearby non-worshiping nation.</Response7>
 			<Response8>You snap your fingers and the robots spontaneously explode. You quietly yet confidently say "got 'em… oh wait" as the lack of wind allows shrapnel to rain down on your followers.</Response8>
 		</Events>
-		<Events badeventsvariation="Zombie apoc">
+		<Events badeventsvariation="The dead have risen from their graves to walk the Earth once more and devour brains.">
 			<id>11</id>
 			<Response1>You made the undead dead again before they could infect anyone. Your followers praise you</Response1>
 			<Response2>You made the undead dead again before they could affect anyone. But your followers question if you are all powerful for not stopping the transformation</Response2>
@@ -132,7 +133,7 @@
 			<Response7>You throw one of your scientist new concoction onto the world, it has never been tested. But luckily, it returns the undead back to their youthful selves. And the people clap and sing for joy on Your Grace </Response7>
 			<Response8>You throw one of your scientist new concoction onto the world, it has never been tested. Unluckily, it anyone that the concoction touches turns into a zombie.</Response8>
 		</Events>
-		<Events badeventsvariation="Guy with glowing red stick appears">
+		<Events badeventsvariation="A mysterious traveler appears with a gas mask, a black cape, and a glowing red stick. ">
 			<id>-1</id>
 			<Response1>You see him trying to command your followers in giving him things. You appear before him alone and make him pay dearly for these injustices…….</Response1>
 			<Response2>You see him trying to command your followers in giving him things. You appear before him in front of your people to stop him, but he  goes on a little rampage before you're able to stop him.</Response2>
@@ -148,8 +149,8 @@
 			<Response1>Using your brush of magnificence, you paint the sky with a marvelous rainbow. Your people enjoy the sight and praise Your Grace.</Response1>
 			<Response2>You hastily conjure up a clown and have him appear upon your people. Your people feel rather uncomfortable around this clown who seems to be quite fond of spoons. All of his jokes have something to do with spoons.</Response2>
 			<Response3>In an act of generosity, you drip water from your chalice upon the village crops. The villagers rejoice in their harvest.</Response3>
-			<Response4>blank</Response4>
-			<Response5>BLANK</Response5>
+			<Response4>In an act of generosity, you drip water from your chalice upon the village crops. You've dripped too much and as a result, the plants gain sentience and become uncontrollable.</Response4>
+			<Response5>You project light from the heavens down onto the ground in the shape of the hit movie "God." Your people are enthralled.</Response5>
 			<Response6>You strike down one of your followers with a brilliant flash of lightning. They certainly aren't bored anymore.</Response6>
 			<Response7>In a fit of anger, you rain fire down and it somehow forms lights in the north. They look at it in awe and are entertained </Response7>
 			<Response8>In a fit of anger, you rain fire down upon the villagers! Are they not entertained?</Response8>
@@ -165,71 +166,49 @@
 			<Response7>At the sight of the sheep you grow hungry, so you ordered your followers to hastily  sacrifice one of them to you. As they start the ritual, the sheep's defense mechanisms kick in but messes up, transforming him into a giant sheep which you share with the people</Response7>
 			<Response8>At the sight of the sheep you grow hungry, so you ordered your followers to hastily  sacrifice one of them to you. As they start the ritual, the sheep's defense mechanisms kick in, transforming him into a giant man-killing sheep who terrorize your people</Response8>
 		</Events>
-		<Events badeventsvariation="WILDFIRE">
+		<Events badeventsvariation="A great inferno rages up from the woodlands from an outlying territory.">
 			<id>14</id>
 			<Response1>Looking directly at the fire, you start shedding tears that rains down and put out the fire. Your followers thank you for your grace </Response1>
 			<Response2>Looking directly at the fire, you start shedding tears that rains down and put out the fire, but you continue and flood some parts of your land</Response2>
-			<Response3>BLANK</Response3>
-			<Response4>BLANK</Response4>
-			<Response5>BLANK</Response5>
-			<Response6>BLANK</Response6>
-			<Response7>BLANK</Response7>
-			<Response8>BLANK</Response8>
+			<Response3>You inhale and unleash a mighty gust of wind, snuffing the fire like a candle. Your people have an epic rave for the night.</Response3>
+			<Response4>You blow on the fire and attempt to put it out but instead you sneeze and uproot a few homes.</Response4>
+			<Response5>You unleash a mighty ice dragon. With its minty fresh breath, it extinguishes the fire in one exhale! Your people enjoy the temporary cool air.</Response5>
+			<Response6>You summon a massive sand storm to quell the fire. While the fire has now been extinguished, your people are being drowned in dust!</Response6>
+			<Response7>You summon a mighty typhoon, the fire extinguishes instantly and luckily your followers are visiting another land for the day!</Response7>
+			<Response8>You summon a mighty typhoon, the fire extinguishes instantly and unfortunately your followers have experienced some moderate to severe flooding.</Response8>
 		</Events>
-		<Events badeventsvariation="One follower is trying to rebel against you">
+		<Events badeventsvariation="One follower is trying to rebel against you.">
 			<id>15</id>
-			<Response1>BLANK</Response1>
-			<Response2>BLANK</Response2>
-			<Response3>BLANK</Response3>
-			<Response4>BLANK</Response4>
-			<Response5>BLANK</Response5>
-			<Response6>BLANK</Response6>
-			<Response7>BLANK</Response7>
-			<Response8>BLANK</Response8>
+			<Response1>You place a curse of bad coffee on him, so that he will never be awake in the mornings until he conforms.</Response1>
+			<Response2>You place a curse of bad coffee on him, but unfortunately he is a tea-drinker.</Response2>
+			<Response3>You send down a very-aggressive fly that buzzes always just outside his ear, perpetually annoying him until he conforms.</Response3>
+			<Response4>You send down a very-aggressive fly that buzzes always just outside his ear, however he manages to catch the fly using a pair of chopsticks.</Response4>
+			<Response5>You make those that are close to him forget and ignore him. In anguish he leaves on a self-exiles and is never heard from ever again</Response5>
+			<Response6>You make those that are close to him forget and ignore him. In anguish he leaves on a self-exiles, but then return with his own followers and even convert some of yours to follow him.</Response6>
+			<Response7>You wanted to make a prime example to those that rebel against you, so while he is walking in the town square, you curse him and he starts to slowly melt. Whether its in awe or in fear, people never disrespected you for a while</Response7>
+			<Response8>You wanted to make a prime example to those that rebel against you, so while he is walking in the town square, you curse him and he starts to slowly melt. However, it spreads, melting a few more. Your followers are indignant and some even leave the faith</Response8>
 		</Events>
-		<Events badeventsvariation="SANDWORM">
+		<Events badeventsvariation="A big, terrifying, and pink Sand Worm has appeared in your peoples borders.">
 			<id>16</id>
-			<Response1>BLANK</Response1>
-			<Response2>BLANK</Response2>
-			<Response3>BLANK</Response3>
-			<Response4>BLANK</Response4>
-			<Response5>BLANK</Response5>
-			<Response6>BLANK</Response6>
-			<Response7>You summon the infamous SAND BIRD which you got as a gift from a merchant who is totally not suspicious which also sold SAND CATS. The Sand Bird quickly swoops in and snatches the Sand Worm. Your followers cannot believe what just happened and place all the (deserved) effort on Your Grace.</Response7>
-			<Response8>BLANK</Response8>
+			<Response1>You attempt to catch the worm into your grasp. You both wrestle until it becomes tired and goes away. The people bow down for your feat of epic strength</Response1>
+			<Response2>You attempt to catch the worm into your grasp. You both wrestle but the worm has got in its wormistic choke hold. Your people stare in disbelief as you grasp for air and the worm destroys some of your follower's buildings</Response2>
+			<Response3>You toss a Holy Ball of Capture in the general direction of the Sand Worm. It wiggles 3 times and then clicks to secure the Sand Worm in its plastic prison. Your people rejoice and place the ball in the general museum.</Response3>
+			<Response4>You toss a Master Ball of Capture in the general direction of the Sand Worm. It wiggles 3 times, however, the Sand Worm does not appear to be caught and it gets more upset. Its devours more of your followers then it originally planned to do.</Response4>
+			<Response5>You attempt to tame the Sand Worm by lassoing it with the Holy Lasso of Lassiness. You successfully snatch the Sand Worm and domesticate the Sand Worm which you then keep as a pet. Your people rejoice in your thoughtfulness.</Response5>
+			<Response6>You attempt to tame the Sand Worm by lassoing it with the Holy Lasso of Lassiness. You fail to catch the Sand Worm! He eats some of your followers.</Response6>
+			<Response7>You summon the infamous Sand Bird which you got as a gift from a merchant who is totally not suspicious which also sold Sand Cats. The Sand Bird quickly swoops in and snatches the Sand Worm. Your followers cannot believe what just happened and place all the (deserved) effort on Your Grace.</Response7>
+			<Response8>You summon the infamous Sand Bird which you got as a gift from a merchant who is totally not suspicious which also sold Sand Cats. Unfortunately, the Sand Bird has not hatched yet, all that appears on the battle field is a moderately sized egg. Some of your followers are devoured by the Sand Worm.</Response8>
 		</Events>
-		<Events badeventsvariation="PARALLEL DIMENSION OPENS">
+		<Events badeventsvariation="A parallel dimension opens in the lands of your people.">
 			<id>17</id>
-			<Response1>BLANK</Response1>
-			<Response2>BLANK</Response2>
-			<Response3>BLANK</Response3>
-			<Response4>BLANK</Response4>
-			<Response5>BLANK</Response5>
-			<Response6>BLANK</Response6>
-			<Response7>BLANK</Response7>
-			<Response8>BLANK</Response8>
-		</Events>
-		<Events badeventsvariation="DRAGON ATTACKS CITY">
-			<id>-1</id>
-			<Response1>undead mage?</Response1>
-			<Response2>BLANK</Response2>
-			<Response3>BLANK</Response3>
-			<Response4>BLANK</Response4>
-			<Response5>BLANK</Response5>
-			<Response6>BLANK</Response6>
-			<Response7>BLANK</Response7>
-			<Response8>Unleash own dragon to fight dragon, many casualties but got to watch a dragon fight</Response8>
-		</Events>
-		<Events badeventsvariation="blah">
-			<id>-1</id>
-			<Response1>blah</Response1>
-			<Response2>b;ah</Response2>
-			<Response3>sdfs</Response3>
-			<Response4>efewfw</Response4>
-			<Response5>sfsf</Response5>
-			<Response6>[gkd[pg</Response6>
-			<Response7>fgdfgdg</Response7>
-			<Response8>epogeog</Response8>
+			<Response1>An alchemist appears, and out of curiosity you chuck a spear of silver at him. He catches it and changes it to a spear of gold, and then gives it back to you.</Response1>
+			<Response2>An alchemist appears, and out of curiosity you chuck a spear of silver at him. He catches it but takes offense to you actions, and proceeds to use your followers to make his philosopher stone.</Response2>
+			<Response3>A mysterious telephone booth appears. You open the doors out of curiosity and out comes a doctor who sounds funny but helps heal some of your people in honor of you</Response3>
+			<Response4>A mysterious telephone booth appears. You open the doors out of curiosity  and out of the machine comes killer robots that go and kill some of your followers.</Response4>
+			<Response5> Killer Platypus comes out of the portal set on your people's destruction, you move to transform them to killer ducks and killer beavers, both which became tasty snacks for your followers </Response5>
+			<Response6> Killer Platypus comes out of the portal set on your people's destruction, you create a flood to drown the Platypus, but forget that the Platypus are semi-aquatic. Your followers run from both the flood and the platypus.</Response6>
+			<Response7>Four master programmers appear before you with great knowledge. They pass on these words of wisdom: "ALWAYS PICK OPTION 1!"</Response7>
+			<Response8>Four master programmers appear before you with great knowledge. Instead of teaching you, they steal some of your followers for personal research.</Response8>
 		</Events>
 	</Badevents>
 </BadeventsCollection>
