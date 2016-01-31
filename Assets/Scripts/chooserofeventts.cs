@@ -6,20 +6,24 @@ using System.IO;
 using System.Xml;
 
 public class chooserofeventts : MonoBehaviour {
+
+	public static EventContainer ec;
   
 	public const string path = "Events";
 
 	void Start()
 	{
-		EventContainer ec = EventContainer.Load (path);
+		 ec = EventContainer.Load (path);
+		//EventContainer Goodec = EventContainer.Load("GoodEvents");
+		//EventContainer Neutralec = EventContainer.Load("NeutralEvents")
 
-		Events e = ec.events [1];
-		Debug.Log (e.happening2);
+
 		//foreach (Events e in ec.events) 
 		//{
 			//print(e.badeventsvariation);
 		//}
 	}
+
 
 
 }

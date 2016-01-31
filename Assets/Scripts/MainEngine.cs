@@ -10,7 +10,7 @@ public class MainEngine : MonoBehaviour
     public static int numberofFollowers;
     public static int powerLeft;
     int followersIncreaseTimes;
-    int playerChoice;
+     int playerChoice;
 	static bool timerRunning;
 
     bool eventHasOccurredJan;
@@ -34,7 +34,7 @@ public class MainEngine : MonoBehaviour
     {
 		singleton = this;
         followersIncreaseTimes = 6;
-        yearTimer = 360.0f;
+        yearTimer = 120.0f;
         numberofFollowers = 100;
         powerLeft = 0;
 		timeForSacrifice();
@@ -59,8 +59,8 @@ public class MainEngine : MonoBehaviour
 	public static void NewSacrificeMade(int numberSaced){
 		timerRunning = true;
 		numberofFollowers -= numberSaced;
-		powerLeft += numberSaced * 10;
-		MainEngine.singleton.badEvent (1);
+		powerLeft += numberSaced * 2;
+		//MainEngine.singleton.badEvent (1);
 	}
 
     void timeForSacrifice()
@@ -76,7 +76,16 @@ public class MainEngine : MonoBehaviour
 		followers.Panic ();
         Debug.Log("Bad Event Occurred with severity of " + eventSeverity);
 		timerRunning = false;
-		UIMain.NewEvent("Repace discription",new string[]{"option1","option2"},new int[]{0,12},eventSeverity);
+		int rando = Random.Range (1, 3);
+		if (rando == 1) {
+			UIMain.NewEvent (chooserofeventts.ec.events [0].badeventsvariation, new string[]{"pass","option1","option2","option3","option4"}, new int[]{0,5,10,15,20}, eventSeverity + 1);
+		} 
+		else 
+		{
+			UIMain.NewEvent (chooserofeventts.ec.events [1].badeventsvariation, new string[]{"pass","option1","option2","option3","option4"}, new int[]{0,5,10,15,20}, eventSeverity + 1);
+		}
+		
+		//UIMain.NewEvent("Repace discription",new string[]{"option1","option2"},new int[]{0,12},eventSeverity);
 
 
 
@@ -86,24 +95,71 @@ public class MainEngine : MonoBehaviour
 	public void BadEventEnd(int optionSelected,int eventSeverity){
 		timerRunning = true;
 		playerChoice = optionSelected;
+	//	UIMain.NewOutcome(chooserofeventts.ec.events[1].response4);
 		if(playerChoice==1)
 		{
 			if(eventSeverity==0)
 			{
-				numberOfFollowersUpdate(-7);
+				//numberOfFollowersUpdate(-7);
 				powerUpdate(-5);
+				int randomResponse = Random.Range(1,11);
+				if(randomResponse <=8)
+				{
+					UIMain.NewOutcome(chooserofeventts.ec.events[1].response1);
+
+					followersChange(1);
+				}
+
+				else 
+				{
+
+					UIMain.NewOutcome(chooserofeventts.ec.events[1].response2);
+
+					followersChange(-3);
+				}
 			}
 			
 			else if(eventSeverity==1)
 			{
-				numberOfFollowersUpdate(-7);
+				//numberOfFollowersUpdate(-7);
 				powerUpdate(-5);
+				int randomResponse = Random.Range(1,11);
+				if(randomResponse <= 6)
+				{
+					UIMain.NewOutcome(chooserofeventts.ec.events[1].response1);
+
+					followersChange(1);
+				}
+				
+				else 
+				{
+					UIMain.NewOutcome(chooserofeventts.ec.events[1].response2);
+
+					followersChange(-7);
+				}
 			}
 			
 			else if(eventSeverity==2)
 			{
-				numberOfFollowersUpdate(-7);
+				//numberOfFollowersUpdate(-7);
 				powerUpdate(-5);
+				int randomResponse = Random.Range(1,11);
+				if(randomResponse <=2)
+				{
+
+					UIMain.NewOutcome(chooserofeventts.ec.events[1].response1);
+
+					followersChange(1);
+				}
+				
+				else 
+				{
+
+					UIMain.NewOutcome(chooserofeventts.ec.events[1].response2);
+
+					followersChange(-5);
+				}
+
 			}
 		}
 		
@@ -111,20 +167,66 @@ public class MainEngine : MonoBehaviour
 		{
 			if (eventSeverity == 0)
 			{
-				numberOfFollowersUpdate(-7);
+				//numberOfFollowersUpdate(-7);
 				powerUpdate(-10);
+				int randomResponse = Random.Range(1,11);
+				if(randomResponse<=6)
+				{
+					
+					UIMain.NewOutcome(chooserofeventts.ec.events[1].response3);
+
+					followersChange(2);
+				}
+				
+				else 
+				{
+					
+					UIMain.NewOutcome(chooserofeventts.ec.events[1].response4);
+
+					followersChange(-4);
+				}
 			}
 			
 			else if (eventSeverity == 1)
 			{
-				numberOfFollowersUpdate(-7);
+				//numberOfFollowersUpdate(-7);
 				powerUpdate(-10);
+				int randomResponse = Random.Range(1,11);
+				if(randomResponse <=5)
+				{
+					
+					UIMain.NewOutcome(chooserofeventts.ec.events[1].response3);
+
+					followersChange(2);
+				}
+				
+				else 
+				{
+					
+					UIMain.NewOutcome(chooserofeventts.ec.events[1].response4);
+
+					followersChange(-5);
+				}
 			}
 			
 			else if (eventSeverity == 2)
 			{
-				numberOfFollowersUpdate(-7);
+				//numberOfFollowersUpdate(-7);
 				powerUpdate(-10);
+				int randomResponse = Random.Range(1,11);
+				if(randomResponse <=4)
+				{
+					
+					UIMain.NewOutcome(chooserofeventts.ec.events[1].response3);
+					followersChange(2);
+				}
+				
+				else 
+				{
+					
+					UIMain.NewOutcome(chooserofeventts.ec.events[1].response4);
+					followersChange(-8);
+				}
 			}
 		}
 		
@@ -132,20 +234,62 @@ public class MainEngine : MonoBehaviour
 		{
 			if (eventSeverity == 0)
 			{
-				numberOfFollowersUpdate(-7);
+				//numberOfFollowersUpdate(-7);
 				powerUpdate(-15);
+				int randomResponse = Random.Range(1,11);
+				if(randomResponse <=4)
+				{
+					
+					UIMain.NewOutcome(chooserofeventts.ec.events[1].response5);
+					followersChange(4);
+				}
+				
+				else 
+				{
+					
+					UIMain.NewOutcome(chooserofeventts.ec.events[1].response6);
+					followersChange(-6);
+				}
 			}
 			
 			else if (eventSeverity == 1)
 			{
-				numberOfFollowersUpdate(-7);
+				//numberOfFollowersUpdate(-7);
 				powerUpdate(-15);
+				int randomResponse = Random.Range(1,11);
+				if(randomResponse <=5)
+				{
+					
+					UIMain.NewOutcome(chooserofeventts.ec.events[1].response5);
+					followersChange(3);
+				}
+				
+				else 
+				{
+					
+					UIMain.NewOutcome(chooserofeventts.ec.events[1].response6);
+					followersChange(-4);
+				}
 			}
 			
 			else if (eventSeverity == 2)
 			{
-				numberOfFollowersUpdate(-7);
+				//numberOfFollowersUpdate(-7);
 				powerUpdate(-15);
+				int randomResponse = Random.Range(1,11);
+				if(randomResponse <=6)
+				{
+					
+					UIMain.NewOutcome(chooserofeventts.ec.events[1].response5);
+					followersChange(3);
+				}
+				
+				else 
+				{
+					
+					UIMain.NewOutcome(chooserofeventts.ec.events[1].response6);
+					followersChange(-4);
+				}
 			}
 		}
 		
@@ -155,38 +299,83 @@ public class MainEngine : MonoBehaviour
 			{
 				numberOfFollowersUpdate(-7);
 				powerUpdate(-20);
+				int randomResponse = Random.Range(1,11);
+				if(randomResponse <=2)
+				{
+					
+					UIMain.NewOutcome(chooserofeventts.ec.events[1].response7);
+					followersChange(7);
+				}
+				
+				else 
+				{
+					
+					UIMain.NewOutcome(chooserofeventts.ec.events[1].response8);
+					followersChange(-10);
+				}
 			}
 			
 			else if (eventSeverity == 1)
 			{
-				numberOfFollowersUpdate(-7);
+				//numberOfFollowersUpdate(-7);
 				powerUpdate(-20);
+				int randomResponse = Random.Range(1,11);
+				if(randomResponse <=4)
+				{
+					
+					UIMain.NewOutcome(chooserofeventts.ec.events[1].response7);
+					followersChange(6);
+				}
+				
+				else 
+				{
+					
+					UIMain.NewOutcome(chooserofeventts.ec.events[1].response8);
+					followersChange(-7);
+				}
 			}
 			
 			else if (eventSeverity == 2)
 			{
 				numberOfFollowersUpdate(-7);
 				powerUpdate(-20);
+				int randomResponse = Random.Range(1,11);
+				if(randomResponse <=8)
+				{
+					
+					UIMain.NewOutcome(chooserofeventts.ec.events[1].response7);
+					followersChange(4);
+				}
+				
+				else 
+				{
+					
+					UIMain.NewOutcome(chooserofeventts.ec.events[1].response8);
+					followersChange(-3);
+				}
 			}
 		}
 		
-		else if (playerChoice == 5)
+		else if (playerChoice == 0)
 		{
 			if (eventSeverity == 0)
 			{
-				numberOfFollowersUpdate(-7);
+				//numberOfFollowersUpdate(-7);
+				followersChange(-5);
 				powerUpdate(0);
 			}
 			
 			else if (eventSeverity == 1)
 			{
-				numberOfFollowersUpdate(-7);
+				//numberOfFollowersUpdate(-7);
+				followersChange(-10);
 				powerUpdate(0);
 			}
 			
 			else if (eventSeverity == 2)
 			{
-				numberOfFollowersUpdate(-7);
+				//numberOfFollowersUpdate(-7);
+				followersChange(-20);
 				powerUpdate(0);
 			}
 		}
@@ -205,12 +394,13 @@ public class MainEngine : MonoBehaviour
     {
 		followers.Celebrate ();
         Debug.Log("Good Event Occurred with severity of " + eventSeverity);
-		UIMain.NewEvent ("Good event", new string[]{"option1","o2"}, new int[]{0,12}, eventSeverity * -1);
+		UIMain.NewEvent ("Good event", new string[]{"option1","o2"}, new int[]{0,12}, (1 +eventSeverity) * -1);
     }
 
 	public void GoodEventEnd(int optionSelected,int sevarity){
 		if(sevarity==0)
 			numberOfFollowersUpdate(5);
+
 		
 		else if(sevarity==1)
 			numberOfFollowersUpdate(10);
@@ -233,11 +423,11 @@ public class MainEngine : MonoBehaviour
     void eventOccurred()
     {
         //Defines whether event is bad, neutral or good
-        int eventType = Random.Range(0, 8);
+        int eventType = Random.Range(0, 11);
 
         if (eventType > 3)
         {
-            int eventSeverity = Random.Range(0, 3);
+            int eventSeverity = Random.Range(0, 2);
             badEvent(eventSeverity);
         }
 
@@ -246,7 +436,7 @@ public class MainEngine : MonoBehaviour
             neutralEvent();
         }
 
-        else if (eventType > 0 & eventType < 3)
+        else if (eventType >= 0 & eventType < 3)
         {
             int eventSeverity = Random.Range(0, 3);
             goodEvent(eventSeverity);
@@ -261,6 +451,7 @@ public class MainEngine : MonoBehaviour
         
         timeForSacrifice();
         eventCounter = Random.Range(0, 4);
+		yearTimer = 120.0f;
         followersIncreaseTimes = 6;
         eventHasOccurredJan = false;
         eventHasOccurredFeb = false;
@@ -285,173 +476,254 @@ public class MainEngine : MonoBehaviour
 			yearTimer -= Time.deltaTime;
 		}
         //Resolution for month of January 
-        if (yearTimer >= 330.0f && yearTimer < 360.0f)
+        if (yearTimer >= 110.0f && yearTimer < 120.0f)
         {
-            int eventProbability = Random.Range(1, 4);
+            int eventProbability = Random.Range(1, 3);
             if (eventProbability == 2 && eventCounter > 0 && eventHasOccurredJan==false)
             {
+				Debug.Log(eventProbability);
                 eventOccurred();
                 eventHasOccurredJan = true;
                 eventCounter--;
                 followersIncreaseRandomly();
               //  yearTimer = 330;
             }
+
+			else if(eventProbability==1)
+			{
+				eventHasOccurredJan = true;
+			}
         }
 
         //Resolution for month of February
-        else if (yearTimer >= 300.0f && yearTimer < 330.0f && eventHasOccurredFeb == false)
+        else if (yearTimer >= 100.0f && yearTimer < 110.0f )
         {
-            int eventProbability = Random.Range(1, 4);
-            if (eventProbability == 2 && eventCounter > 0)
+            int eventProbability = Random.Range(1, 3);
+
+			if (eventProbability == 2 && eventCounter > 0 && eventHasOccurredFeb == false)
             {
+				Debug.Log(eventProbability);
                 eventOccurred();
                 eventCounter--;
                 eventHasOccurredFeb = true;
                 followersIncreaseRandomly();
-             //   yearTimer = 300;
             }
+
+			else if(eventProbability==1)
+			{
+				Debug.Log(eventProbability);
+				eventHasOccurredFeb = true;
+			}
         }
 
         //Resolution for month of March
-        else if (yearTimer >= 270.0f && yearTimer < 300.0f && eventHasOccurredMar == false)
+        else if (yearTimer >= 90.0f && yearTimer < 100.0f )
         {
-            int eventProbability = Random.Range(1, 4);
-            if (eventProbability == 2 && eventCounter > 0)
+            int eventProbability = Random.Range(1, 3);
+
+			if (eventProbability == 2 && eventCounter > 0 && eventHasOccurredMar == false)
             {
+				Debug.Log(eventProbability);
                 eventOccurred();
                 eventCounter--;
                 eventHasOccurredMar = true;
                 followersIncreaseRandomly();
-               // yearTimer = 270;
             }
+
+			else if(eventProbability==1)
+			{
+				Debug.Log(eventProbability);
+				eventHasOccurredMar = true;
+			}
         }
 
 
         //Resolution for month of April
-        else if (yearTimer >= 240.0f && yearTimer < 270.0f && eventHasOccurredApr ==false)
+        else if (yearTimer >= 80.0f && yearTimer < 90.0f )
         {
-            int eventProbability = Random.Range(1, 4);
-            if (eventProbability == 2 && eventCounter > 0)
+            int eventProbability = Random.Range(1, 3);
+
+			if (eventProbability == 2 && eventCounter > 0 && eventHasOccurredApr ==false)
             {
+				Debug.Log(eventProbability);
                 eventOccurred();
                 eventCounter--;
                 eventHasOccurredApr = true;
                 followersIncreaseRandomly();
-               // yearTimer = 240;
             }
+			else if(eventProbability==1)
+			{
+				Debug.Log(eventProbability);
+				eventHasOccurredApr = true;
+			}
         }
 
         //Resolution for month of May
-        else if (yearTimer >= 210.0f && yearTimer < 240.0f && eventHasOccurredMay == false)
+        else if (yearTimer >= 70.0f && yearTimer < 80.0f )
         {
-            int eventProbability = Random.Range(1, 4);
-            if (eventProbability == 2 && eventCounter > 0)
+            int eventProbability = Random.Range(1, 3);
+
+			if (eventProbability == 2 && eventCounter > 0 && eventHasOccurredMay == false)
             {
+				Debug.Log(eventProbability);
                 eventOccurred();
                 eventCounter--;
                 eventHasOccurredMay = true;
                 followersIncreaseRandomly();
-              //  yearTimer = 210;
             }
+
+			else if(eventProbability==1)
+			{
+				Debug.Log(eventProbability);
+				eventHasOccurredMay = true;
+			}
         }
 
         //Resolution for month of June
-        else if (yearTimer >= 180.0f && yearTimer < 210.0f && eventHasOccurredJun == false)
+        else if (yearTimer >= 60.0f && yearTimer < 70.0f )
         {
-            int eventProbability = Random.Range(1, 4);
-            if (eventProbability == 2 && eventCounter > 0)
+            int eventProbability = Random.Range(1, 3);
+
+			if (eventProbability == 2 && eventCounter > 0 && eventHasOccurredJun == false)
             {
+				Debug.Log(eventProbability);
                 eventOccurred();
                 eventCounter--;
                 eventHasOccurredJun = true;
                 followersIncreaseRandomly();
-                // yearTimer = 180;
             }
+
+			else if(eventProbability==1)
+			{
+				Debug.Log(eventProbability);
+				eventHasOccurredJun = true;
+			}
         }
 
         //Resolution for month of July
-        else if (yearTimer >= 150.0f && yearTimer < 180.0f && eventHasOccurredJul == false)
+        else if (yearTimer >= 50.0f && yearTimer < 60.0f )
         {
-            int eventProbability = Random.Range(1, 4);
-            if (eventProbability == 2 && eventCounter > 0)
+            int eventProbability = Random.Range(1, 3);
+
+			if (eventProbability == 2 && eventCounter > 0 && eventHasOccurredJul == false)
             {
+				Debug.Log(eventProbability);
                 eventOccurred();
                 eventCounter--;
                 eventHasOccurredJul = true;
                 followersIncreaseRandomly();
-                //yearTimer = 150;
             }
+
+			else if(eventProbability==1)
+			{
+				Debug.Log(eventProbability);
+				eventHasOccurredJul = true;
+			}
         }
 
         //Resolution for month of August
-        else if (yearTimer >= 120.0f && yearTimer < 150.0f && eventHasOccurredAug == false)
+        else if (yearTimer >= 40.0f && yearTimer < 50.0f )
         {
-            int eventProbability = Random.Range(1, 4);
-            if (eventProbability == 2 && eventCounter > 0)
+            int eventProbability = Random.Range(1, 3);
+
+			if (eventProbability == 2 && eventCounter > 0 && eventHasOccurredAug == false)
             {
+				Debug.Log(eventProbability);
                 eventOccurred();
                 eventCounter--;
                 eventHasOccurredAug = true;
                 followersIncreaseRandomly();
-                // yearTimer = 120;
             }
+			else if(eventProbability==1)
+			{
+				Debug.Log(eventProbability);
+				eventHasOccurredAug = true;
+			}
         }
 
         //Resolution for month of September
-        else if (yearTimer >= 90.0f && yearTimer < 120.0f && eventHasOccurredSep == false)
+        else if (yearTimer >= 30.0f && yearTimer < 40.0f )
         {
-            int eventProbability = Random.Range(1, 4);
-            if (eventProbability == 2 && eventCounter > 0)
+            int eventProbability = Random.Range(1, 3);
+
+			if (eventProbability == 2 && eventCounter > 0 && eventHasOccurredSep == false)
             {
+				Debug.Log(eventProbability);
                 eventOccurred();
                 eventCounter--;
                 eventHasOccurredSep = true;
                 followersIncreaseRandomly();
-                //yearTimer = 90;
             }
+
+			else if(eventProbability==1)
+			{
+				Debug.Log(eventProbability);
+				eventHasOccurredSep = true;
+			}
         }
 
         //Resolution for month of October
-        else if (yearTimer >= 60.0f && yearTimer < 90.0f && eventHasOccurredOct == false)
+        else if (yearTimer >= 20.0f && yearTimer < 30.0f )
         {
-            int eventProbability = Random.Range(1, 4);
-            if (eventProbability == 2 && eventCounter > 0)
+            int eventProbability = Random.Range(1, 3);
+
+			if (eventProbability == 2 && eventCounter > 0 && eventHasOccurredOct == false)
             {
+				Debug.Log(eventProbability);
                 eventOccurred();
                 eventCounter--;
                 eventHasOccurredOct = true;
                 followersIncreaseRandomly();
-                //yearTimer = 60;
             }
+
+			else if(eventProbability==1)
+			{
+				Debug.Log(eventProbability);
+				eventHasOccurredOct = true;
+			}
         }
 
 
         //Resolution for month of November
-        else if (yearTimer >= 30.0f && yearTimer < 60.0f && eventHasOccurredNov == false)
+        else if (yearTimer >= 10.0f && yearTimer < 20.0f )
         {
-            int eventProbability = Random.Range(1, 4);
-            if (eventProbability == 2 && eventCounter > 0)
+            int eventProbability = Random.Range(1, 3);
+
+			if (eventProbability == 2 && eventCounter > 0 && eventHasOccurredNov == false)
             {
+				Debug.Log(eventProbability);
                 eventOccurred();
                 eventCounter--;
                 eventHasOccurredNov = true;
                 followersIncreaseRandomly();
-                //yearTimer = 30;
             }
+
+			else if(eventProbability==1)
+			{
+				Debug.Log(eventProbability);
+				eventHasOccurredNov = true;
+			}
         }
 
         //Resolution for month of December
-        else if (yearTimer >= 0.0f && yearTimer < 30.0f && eventHasOccurredDec ==false)
+        else if (yearTimer >= 0.0f && yearTimer < 10.0f )
         {
-            int eventProbability = Random.Range(1, 4);
-            if (eventProbability == 2 && eventCounter > 0)
+            int eventProbability = Random.Range(1, 3);
+
+			if (eventProbability == 2 && eventCounter > 0 && eventHasOccurredDec ==false)
             {
+				Debug.Log(eventProbability);
                 eventOccurred();
                 eventCounter--;
                 eventHasOccurredDec = true;
                 followersIncreaseRandomly();
-                //earTimer = 0;
             }
+
+			else if(eventProbability==1)
+			{
+				Debug.Log(eventProbability);
+				eventHasOccurredDec = true;
+			}
         }
 
         else if (yearTimer < 0.0f)
@@ -479,4 +751,13 @@ public class MainEngine : MonoBehaviour
 
         }
     }
+
+
+	float randomPercentage(int average){
+		return Random.Range (average - 1, average + 1) * 0.01f;
+	}
+	void followersChange(int averagePercentage){
+		int followersIncrease=(int)(randomPercentage(averagePercentage)*numberofFollowers);
+		numberOfFollowersUpdate(followersIncrease);
+	}
 }

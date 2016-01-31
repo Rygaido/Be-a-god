@@ -74,10 +74,10 @@ public class UIMain : MonoBehaviour
 			//nutralEvent
 		} else if (severity > 0) {
 			//bad event
-			MainEngine.singleton.BadEventEnd (index,severity);
+			MainEngine.singleton.BadEventEnd (index,severity-1);
 		} else {
 			//good event
-			MainEngine.singleton.GoodEventEnd (index,severity * -1);
+			MainEngine.singleton.GoodEventEnd (index,(severity * -1)-1);
 		}
     }
 
@@ -181,7 +181,7 @@ public class UIMain : MonoBehaviour
 
     private void NewSacP(int limit)
     {
-		if (numberInput.text.Length > 0) {
+		if (numberInput.text.Length == 0) {
 			numberInput.text = "1";
 		}
         currentState = State.Sac;
