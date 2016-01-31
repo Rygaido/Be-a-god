@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<BadeventsCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Badevents>
+		<Events badeventsvariation="Water is being rationed off amongst your people, those with lower social status thirst and ask for your help.">
+			<Response1>Without much effort, you dip your fingers in your chalice and lightly sprinkle the sparse land below. The people are happy that rain has come their way. Some feel that this is a good sign and are gambling more </Response1>
+			<Response2>Without much effort, you dip your fingers in your chalice and lightly sprinkle the sparse land below. Your followers scramble out of their dilapidated residence to grab what they can in their dust filled buckets. Fights break out.</Response2>
+			<Response3>You dump a good portion of your chalice on to the lands below. A thunder storm forms and rain rages down. Your followers fill their dry buckets; all are content as there is more than enough water to go around.</Response3>
+			<Response4>You dump a good portion of your chalice on to the lands below. You seemed to have focused your water on one location, as a result, minor flooding occurs.</Response4>
+			<Response5>You take a heaping sip of water from your chalice and spit it out with much force. People rejoice as a hurricane ravages through the lands.</Response5>
+			<Response6> You take a heaping sip of water from your chalice and spit it out with much force.  A large hurricane forms over your peoples land, the winds ravage and tear up the houses of your people.</Response6>
+			<Response7>You conjure up a typhoon large enough that even you can see from your throne! Like a sponge, the land absorbs all of the excess water. Plants instantly come back to life and wells fill, your people are amazed and happy.</Response7>
+			<Response8>You conjure up a typhoon large enough that even you can see from your throne! As floods ravage the sparse land, your followers at lower elevations literally drown in your grace. Those few who were spared at least knew you had good intentions.</Response8>
+		</Events>
+		<Events badeventsvariation="An earthquake shakes the ground, people are thrown off balance and buildings wobble.">
+			<Response1>With little effort, you apply force using a single finger to counter act the quake. The quake shivers in fear to your touch and dissipates instantly. Your people are as equally amazed as you are.</Response1>
+			<Response2>With little effort, you apply force using a single finger to counter act the quake. The quake ceased in isolated locations.</Response2>
+			<Response3>With moderate effort, you lift your people and their property off the ground a considerable amount. They watch in awe as the trees shed their leaves. You then softly move them back down, they sing your name unto the night.</Response3>
+			<Response4>Appearing to your thrown a little late so work, you realize that your people are in trouble. With haste, you quickly flick your wrist upward and send your people flying. For some reason you thought this was a good idea. Some of your followers who were outside perished while those inside suffered injuries.</Response4>
+			<Response5>You throw a mighty punch to the earth in the quakes opposite direction. Your punch was spot on and the quake quells, your people praise your strength and sharp thinking.</Response5>
+			<Response6>You throw a mighty punch to the earth in the quakes opposite direction. Unfortunately, your form was a little shaky and the quake only got stronger.</Response6>
+			<Response7>Stretching out your hands, you manage to shake the Earth in perfect harmony against the the quake. Your followers end up feeling none of the quakes strength while those in other areas are tossed around violently. Conveniently, they are all non-followers.</Response7>
+			<Response8>Quickly stretching out your hands, you attempt to shake the Earth against the quakes beat but due to your lack of musical talent, you manage to strengthen the quake ten fold!</Response8>
+		</Events>
+		<Events badeventsvariation="An unexpected blizzard hits your peoples land.">
+			<Response1>You perform a rite on your followers to prepare them for hibernation as the blizzard approaches. Sometime after the blizzard you nearly forgot about your followers. You quickly use the Sacred Air horn and wake up your followers to enjoy the warm Spring air.</Response1>
+			<Response2>You perform a rite on your followers to prepare them for hibernation as the blizzard approaches. However, you forgot to wake them up afterwards and some of your followers starve to death.</Response2>
+			<Response3>You send down Holy Shovels of Shoveling which have the ability to quickly cut through snow and (make it feel light as a feather). Knowing that your followers aren't immortal, you attach balloons to each shovel to allow for a safe decent.</Response3>
+			<Response4>You send down Holy Shovels of Shoveling which have the ability to quickly cut through snow and (make it feel light as a feather). Unfortunately, the Holy Shovels of Shoveling fall from the heavens at unsafe speeds resulting in impalement.</Response4>
+			<Response5>You unleash a fire breathing dragon which has been trained for 7 God years.  With precision and accuracy, the dragon breaths fire in specific areas careful to avoid your followers. Your followers are astonished by this act and praise Your Grace.</Response5>
+			<Response6>You unleash a fire breathing dragon it is untamed but you believe in it.  Due to your negligence, the dragon roasts your followers, however, the snow is clear.</Response6>
+			<Response7>You focus energy from the sun at your peoples land for a few seconds to melt snow. Your followers are relieved that their crops will be spared.</Response7>
+			<Response8>You place firewood on the sun to increase its intensity.  As a result, the snow quickly melts, however, a drought plagues your people. It's the thought that counts.</Response8>
+		</Events>
+		<Events badeventsvariation="A cyclone appears and begins ripping apart your peoples houses.">
+			<Response1>BLANK</Response1>
+			<Response2>BLANK</Response2>
+			<Response3>BLANK</Response3>
+			<Response4>BLANK</Response4>
+			<Response5>BLANK</Response5>
+			<Response6>BLANK</Response6>
+			<Response7>BLANK</Response7>
+			<Response8>BLANK</Response8>
+		</Events>
+		<Events badeventsvariation="A volcano dormant for thousands of years rumbles close to your people. Unknown to your people, this volcano is bound to blow soon.">
+			<Response1>BLANK</Response1>
+			<Response2>BLANK</Response2>
+			<Response3>BLANK</Response3>
+			<Response4>BLANK</Response4>
+			<Response5>BLANK</Response5>
+			<Response6>BLANK</Response6>
+			<Response7>BLANK</Response7>
+			<Response8>BLANK</Response8>
+		</Events>
+		<Events badeventsvariation="One &quot;follower&quot; has started a movement against Your Grace as he believes the &quot;silly&quot; array of daily rituals such as the Holy Jumping Jacks are unnecessary.">
+			<Response1>You appear before the nay-sayer in a dream in all your glory… then smack him across the face. The next day he hastily ended the movement.</Response1>
+			<Response2>You beset the nay-sayer with nightmares and visions of inconceivable horror. Nothing has changed, he must have forgot his dreams.</Response2>
+			<Response3>You give the little heretic a plague of severe itchiness. He seems to have learned his lesson, and now everyday he does extra Holy Jumping Jacks.</Response3>
+			<Response4>You plagued the little heretic with relentless sneezing. He seems to have become angry and the movement continues.</Response4>
+			<Response5>You struck down the sinful rebel with a blinding flash of lightning. None of your follows skipped their Holy Jumping Jacks that day.</Response5>
+			<Response6>In your rage you hurled down a mighty thunderbolt to smite the sinful rebel, but you missed and hit the cheese-maker. The movement doubles in strength.</Response6>
+			<Response7>You unleash a vicious plague of mosquitos upon your people until they repent their sinful ways. The nay-sayer quickly loses all his support.</Response7>
+			<Response8>You reach to the sun and scoop a mighty fire-ball then drop it upon the rebellious movement. Many people died, but most of them were rebels… you know… probably.</Response8>
+		</Events>
+		<Events badeventsvariation="One follower claims to be a reincarnation of Your Grace and is speaking in your place.">
+			<Response1>Out of jealousy for his GORGEOUS hair, you give him bad hair days for the rest of his pitiful existence. A trend is set amongst your followers for this hairstyle.</Response1>
+			<Response2>Out of jealousy for his GORGEOUS hair, you give him bad hair days for the rest of his pitiful existence. As a result, his self confidence hinders considerably and he locks himself in his home. Your followers quickly forget about him.</Response2>
+			<Response3>BLANK</Response3>
+			<Response4>BLANK</Response4>
+			<Response5>BLANK</Response5>
+			<Response6>BLANK</Response6>
+			<Response7>BLANK</Response7>
+			<Response8>BLANK</Response8>
+		</Events>
+		<Events badeventsvariation="An unorganized nomad tribe has stumbled upon your peoples land and has started an attack">
+			<Response1>BLANK</Response1>
+			<Response2>BLANK</Response2>
+			<Response3>BLANK</Response3>
+			<Response4>BLANK</Response4>
+			<Response5>BLANK</Response5>
+			<Response6>BLANK</Response6>
+			<Response7>BLANK</Response7>
+			<Response8>BLANK</Response8>
+		</Events>
+		<Events badeventsvariation="A neighboring nation has disrupted your peoples thousand year Yo-Yo trade route.">
+			<Response1>You honestly could care less about your people's Yo-Yo trade route as you've recently gotten into Cubing. However, you decide to place a hastily put together vision in the trade masters head in which he slides four inflatable life savers under each leg of a camel in preparation for sea travel as an alternate route. Trade continues again but at a slower pace.</Response1>
+			<Response2>You honestly could care less about your people's Yo-Yo trade route as you've recently gotten into Cubing. However, you decide to place a hastily put together vision in the trade masters head in which he slides four inflatable life savers under each leg of a camel in preparation for sea travel as an alternate route. The trade master poorly interprets the vision (???)</Response2>
+			<Response3>You attempt to conjure up a mirage of the Yo-Yo merchants in front of the attackers as a distraction for the attackers. The attackers easily fall for the mirage, when they finally reach the faux merchants, they are presented with stacks of Yo-Yo catalogues which the attackers never really took the time to look at. They are now interested in opening a trade route with your people.</Response3>
+			<Response4>You attempt to conjure up a mirage of the Yo-Yo merchants in front of the attackers as a distraction for the attackers. One of the attackers uses their binoculars only to prove that the mirage is nothing but a stack of Yo-Yo catalogues. The attackers are infuriated and now have a personal vendetta against Yo-Yo's and anyone who trades them.</Response4>
+			<Response5>As unimaginative as it may sound, you part the waves of a nearby ocean indefinitely. Not only does this boom the Yo-Yo trade for your people, it also creates a temporary surplus of food for your people as they simply pluck fish from the oceans walls.</Response5>
+			<Response6>As unimaginative as it may sound, you part the waves of a nearby ocean indefinitely. Unfortunately, you start the wave parting too close to your people's seaport, as a result, essential fishing ships and other vessels topple over. Your people starve… because of your obsession for Yo-Yo's. </Response6>
+			<Response7>To eliminate the problem completely, you decide to rain meteors amongst the neighboring nation. Despite the neighboring nation committing multiple atrocities, they did not think that they would perish due to a children's toy. They are eliminated completely and the trade route resumes.</Response7>
+			<Response8>To eliminate the problem completely, you decide to rain meteors amongst the neighboring nation. Unbeknownst to you, upper atmosphere winds of approximately 800 miles per hour hurl the meteors off their intended path and end up hitting your followers land. The thousand year old Yo-Yo shop is damaged indefinitely. good job</Response8>
+		</Events>
+	</Badevents>
+</BadeventsCollection>

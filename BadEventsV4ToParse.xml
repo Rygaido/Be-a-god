@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<BadeventsCollection>
+	<Badevents>
+		<Events>
+			<Response1>With little effort, you apply force using a single finger to counter act the quake. The quake shivers in fear to your touch and dissipates instantly. Your people are as equally amazed as you are.</Response1>
+			<Response2>With little effort, you apply force using a single finger to counter act the quake. The quake ceased in isolated locations.</Response2>
+		</Events>
+		<Events>
+			<Response1>You perform a rite on your followers to prepare them for hibernation as the blizzard approaches. Sometime after the blizzard you nearly forgot about your followers. You quickly use the Sacred Air horn and wake up your followers to enjoy the warm Spring air.</Response1>
+			<Response2>You perform a rite on your followers to prepare them for hibernation as the blizzard approaches. However, you forgot to wake them up afterwards and some of your followers starve to death.</Response2>
+		</Events>
+		<Events>
+			<Response1>BLANK</Response1>
+			<Response2>BLANK</Response2>
+		</Events>
+		<Events>
+			<Response1>BLANK</Response1>
+			<Response2>BLANK</Response2>
+		</Events>
+		<Events>
+			<Response1>You appear before the nay-sayer in a dream in all your glory… then smack him across the face. The next day he hastily ended the movement.</Response1>
+			<Response2>You beset the nay-sayer with nightmares and visions of inconceivable horror. Nothing has changed, he must have forgot his dreams.</Response2>
+		</Events>
+		<Events>
+			<Response1>Out of jealousy for his GORGEOUS hair, you give him bad hair days for the rest of his pitiful existence. A trend is set amongst your followers for this hairstyle.</Response1>
+			<Response2>Out of jealousy for his GORGEOUS hair, you give him bad hair days for the rest of his pitiful existence. As a result, his self confidence hinders considerably and he locks himself in his home. Your followers quickly forget about him.</Response2>
+		</Events>
+		<Events>
+			<Response1>BLANK</Response1>
+			<Response2>BLANK</Response2>
+		</Events>
+		<Events>
+			<Response1>You honestly could care less about your people's Yo-Yo trade route as you've recently gotten into Cubing. However, you decide to place a hastily put together vision in the trade masters head in which he slides four inflatable life savers under each leg of a camel in preparation for sea travel as an alternate route. Trade continues again but at a slower pace.</Response1>
+			<Response2>You honestly could care less about your people's Yo-Yo trade route as you've recently gotten into Cubing. However, you decide to place a hastily put together vision in the trade masters head in which he slides four inflatable life savers under each leg of a camel in preparation for sea travel as an alternate route. The trade master poorly interprets the vision (???)</Response2>
+		</Events>
+	</Badevents>
+</BadeventsCollection>
