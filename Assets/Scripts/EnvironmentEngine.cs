@@ -23,7 +23,7 @@ public class EnvironmentEngine : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
-        clouds = new GameObject[20];
+        clouds = new GameObject[10];
 
         Vector3 randomLocation;
         // Start with LEN clouds for debug
@@ -32,7 +32,7 @@ public class EnvironmentEngine : MonoBehaviour {
             randomLocation = new Vector3(
                 Random.Range(cloudSpawnPoint.transform.position.x, cloudSpawnPoint.transform.position.x + rangeX),
                 cloudSpawnPoint.transform.position.y,
-                Random.Range(cloudSpawnPoint.transform.position.z, cloudSpawnPoint.transform.position.z - rangeZ)
+                Random.Range(cloudSpawnPoint.transform.position.z, cloudSpawnPoint.transform.position.z + rangeZ)
             );
             clouds[i] = (GameObject)Instantiate(cloudPrefab, randomLocation, Quaternion.AngleAxis(-90, Vector3.right));
         }
@@ -51,15 +51,15 @@ public class EnvironmentEngine : MonoBehaviour {
         {
             // check for wrap around and react
             if (clouds[i].transform.position.x > maxBoundry.x)
-                clouds[i].transform.position = new Vector3(minBoundry.x, clouds[i].transform.position.y, clouds[i].transform.position.z);
+                clouds[i].transform.position = new Vector3(minBoundry.x, cloudSpawnPoint.transform.position.y, clouds[i].transform.position.z);
             if (clouds[i].transform.position.x < minBoundry.x)
-                clouds[i].transform.position = new Vector3(maxBoundry.x, clouds[i].transform.position.y, clouds[i].transform.position.z);
+                clouds[i].transform.position = new Vector3(maxBoundry.x, cloudSpawnPoint.transform.position.y, clouds[i].transform.position.z);
 
             // fix this
             if (clouds[i].transform.position.z > maxBoundry.z)
-                clouds[i].transform.position = new Vector3(clouds[i].transform.position.x, clouds[i].transform.position.y, minBoundry.z);
+                clouds[i].transform.position = new Vector3(clouds[i].transform.position.x, cloudSpawnPoint.transform.position.y, minBoundry.z);
             if (clouds[i].transform.position.z < minBoundry.z)
-                clouds[i].transform.position = new Vector3(clouds[i].transform.position.x, clouds[i].transform.position.y, maxBoundry.z);
+                clouds[i].transform.position = new Vector3(clouds[i].transform.position.x, cloudSpawnPoint.transform.position.y, maxBoundry.z);
                 
             // move the cloud
             clouds[i].transform.position = clouds[i].transform.position + (velocity * Time.deltaTime);
