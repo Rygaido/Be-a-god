@@ -8,12 +8,14 @@ using System.Xml;
 public class chooserofeventts : MonoBehaviour {
 
 	public static EventContainer ec;
-  
-	public const string path = "Events";
+	public static GoodEventContainer Gec;
+	public const string path1 = "Events";
+	public const string path2 = "GoodEvents";
 
 	void Start()
 	{
-		 ec = EventContainer.Load (path);
+		 ec = EventContainer.Load (path1);
+		Gec = GoodEventContainer.Load (path2);
 		//EventContainer Goodec = EventContainer.Load("GoodEvents");
 		//EventContainer Neutralec = EventContainer.Load("NeutralEvents")
 
