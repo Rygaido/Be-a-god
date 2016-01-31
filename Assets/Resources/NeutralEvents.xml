@@ -3,5 +3,7 @@
 	<Neutralevents>
 		<Events neutraleventsvariation="neutralevent">
 		</Events>
+		<Events neutraleventsvariation="neutralevent2">
+		</Events>
 	</Neutralevents>
 </NeutraleventsCollection>

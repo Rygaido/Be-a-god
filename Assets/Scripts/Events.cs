@@ -5,6 +5,9 @@ using System.Xml.Serialization;
 
 public class Events  {
 
+	[XmlElement("id")]
+	public int id;
+
 	[XmlAttribute("badeventsvariation")]
 	public string badeventsvariation;
 

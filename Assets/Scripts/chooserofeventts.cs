@@ -11,9 +11,9 @@ public class chooserofeventts : MonoBehaviour {
 	public static GoodEventContainer Gec;
 	public static NeutralEventContainer Nec;
 
-	public const string path1 = "Events";
-	public const string path2 = "GoodEvents";
-	public const string path3 = "NeutralEvents";
+	public const string path1 = "bad";
+	public const string path2 = "good";
+	public const string path3 = "neutral";
 	void Start()
 	{
 		 ec = EventContainer.Load (path1);

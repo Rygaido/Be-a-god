@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GoodeventsCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Goodevents>
+		<Events goodeventsvariation="A follower wishes to throw a fesitval in your name but is struggling to find the funds and theme.">
+			<Response1>The follower was only able to muster up enough to throw a small get together with friends and family. The follower tries to reconnect with his dissapointed father who wished for his son to become a tax collector. He fails.</Response1>
+			<Response2>BLANK</Response2>
+			<Response3>The follower throws a massive blowout, party large enough to be heard from the heavens. Drinks were drank and fun was had.</Response3>
+		</Events>
+		<Events goodeventsvariation="arguing in senate for Building a temple / monument">
+			<Response1>BLANK</Response1>
+			<Response2>BLANK</Response2>
+			<Response3>BLANK</Response3>
+		</Events>
+		<Events goodeventsvariation="Holiday of some sort ">
+			<Response1>BLANK</Response1>
+			<Response2>BLANK</Response2>
+			<Response3>BLANK</Response3>
+		</Events>
+		<Events goodeventsvariation="NOMADS">
+			<Response1>A wandering nomad appears in town and is intrigued by the multiple statues and temples to Your Grace. He wishes to follow your light.</Response1>
+			<Response2>A lost family stumble upon your peoples land. The family takes it as a sign that the first thing they see in</Response2>
+			<Response3>A wandering nomad tribe finds your peoples land and is amazed by the elegant temples endowed in purple cloth and garnished with fountains to Your Grace. They all are convinced that you are a loving, caring, responsible, and sane God and wish to follow your light.</Response3>
+		</Events>
+		<Events goodeventsvariation="VOLUNTEER SACRIFICE">
+			<Response1>A follower who has always dreamed about being a sacrifice after attending last years sacrifice ritual wishes to present himself early.</Response1>
+			<Response2>A follower who has convinced some of his friends to be a sacrifice for Your Grace wish to give themselves up early.</Response2>
+			<Response3>A follower has started a cult in your name and is planning an early mass sacrifice. You giggle whilst jumping up and down in glee.</Response3>
+		</Events>
+		<Events goodeventsvariation="HARVEST">
+			<Response1>BLANK</Response1>
+			<Response2>BLANK</Response2>
+			<Response3>BLANK</Response3>
+		</Events>
+		<Events goodeventsvariation="Animal washing ashore">
+			<Response1>BLANK</Response1>
+			<Response2>BLANK</Response2>
+			<Response3>A beached whale presents itself to your people by carving itself open and handing out its blubber. Even though you had nothing to do with thasi</Response3>
+		</Events>
+		<Events goodeventsvariation="SHIPWRECK">
+			<Response1>Most of the ship wrecked crew were zealots and would rather be killed then follow your light.</Response1>
+			<Response2>Convinced some who were ship wrecked and killed the rest. (?)</Response2>
+			<Response3>Your people force the ship wrecked crew to convert to Your Grace.</Response3>
+		</Events>
+		<Events goodeventsvariation="Visiting dignitaries">
+			<Response1>BLANK</Response1>
+			<Response2>BLANK</Response2>
+			<Response3>BLANK</Response3>
+		</Events>
+		<Events goodeventsvariation="Gods visiting from a different Pantheon">
+			<Response1>BLANK</Response1>
+			<Response2>BLANK</Response2>
+			<Response3>BLANK</Response3>
+		</Events>
+		<Events goodeventsvariation="Love is in the air ">
+			<Response1>BLANK</Response1>
+			<Response2>BLANK</Response2>
+			<Response3>BLANK</Response3>
+		</Events>
+		<Events goodeventsvariation="scientific breakthrough">
+			<Response1>BLANK</Response1>
+			<Response2>BLANK</Response2>
+			<Response3>BLANK</Response3>
+		</Events>
+		<Events goodeventsvariation="movie chronicling your amazing feats ">
+			<Response1>BLANK</Response1>
+			<Response2>BLANK</Response2>
+			<Response3>BLANK</Response3>
+		</Events>
+	</Goodevents>
+</GoodeventsCollection>

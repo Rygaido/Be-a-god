@@ -2,25 +2,26 @@
 <BadeventsCollection>
  <Badevents>
   <Events badeventsvariation="Earthquate">
-     <event></event>
-     <Response1>earthquakeresponse1</Response1>
-     <Response2>earthquakeresponse2</Response2>
-     <Response3>earthquakeresponse3</Response3>
-     <Response4>earthquakeresponse4</Response4>
-     <Response5>earthquakeresponse5</Response5>
-     <Response6>earthquakeresponse6</Response6>
-     <Response7>earthquakeresponse1</Response7>
-     <Response8>earthquakeresponse1</Response8>
+		 <id>1</id>
+		 <Response1>earthquakeresponse1</Response1>
+		 <Response2>earthquakeresponse2</Response2>
+		 <Response3>earthquakeresponse3</Response3>
+		 <Response4>earthquakeresponse4</Response4>
+		 <Response5>earthquakeresponse5</Response5>
+		 <Response6>earthquakeresponse6</Response6>
+		 <Response7>earthquakeresponse1</Response7>
+		 <Response8>earthquakeresponse1</Response8>
 	 </Events>
-	   <Events badeventsvariation="Flood">
-     <Response1>a</Response1>
-     <Response2>b</Response2>
-     <Response3>c</Response3>
-     <Response4>d</Response4>
-     <Response5>e</Response5>
-     <Response6>f</Response6>
-     <Response7>g</Response7>
-     <Response8>h</Response8>
+	 <Events badeventsvariation="Flood">
+		 <id>2</id>
+		 <Response1>a</Response1>
+		 <Response2>b</Response2>
+		 <Response3>c</Response3>
+		 <Response4>d</Response4>
+		 <Response5>e</Response5>
+		 <Response6>f</Response6>
+		 <Response7>g</Response7>
+		 <Response8>h</Response8>
 	 </Events>
  </Badevents>
 </BadeventsCollection>

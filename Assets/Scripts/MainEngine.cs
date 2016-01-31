@@ -95,7 +95,6 @@ public class MainEngine : MonoBehaviour
 		 rando = Random.Range (1, 21);
 
         UIMain.NewEvent(chooserofeventts.ec.events[rando].badeventsvariation, new string[] { "pass", "option1", "option2", "option3", "option4" }, new int[] { 0, 5, 10, 15, 20 }, eventSeverity + 1); 
-
         //UIMain.NewEvent("Repace discription",new string[]{"option1","option2"},new int[]{0,12},eventSeverity);
 
 

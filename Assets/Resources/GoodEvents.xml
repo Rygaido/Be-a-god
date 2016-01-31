@@ -3,8 +3,13 @@
 	<Goodevents>
 		<Events goodeventsvariation="A follower wishes to throw a fesitval in your name but is struggling to find the funds and theme.">
 			<Response1>The follower was only able to muster up enough to throw a small get together with friends and family. The follower tries to reconnect with his dissapointed father who wished for his son to become a tax collector. He fails.</Response1>
-			<Response2>Blank</Response2>
-			<Response3>Blank</Response3>
+			<Response2>adsadad</Response2>
+			<Response3>sdasdadadad</Response3>
+		</Events>
+		<Events goodeventsvariation="2nd one">
+			<Response1>something.</Response1>
+			<Response2>hkhjkkhjh</Response2>
+			<Response3>Bcbcbvcbb</Response3>
 		</Events>
 	</Goodevents>
 </GoodeventsCollection>

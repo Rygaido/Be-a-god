@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<BadeventsCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Badevents>
+		<Events badeventsvariation="Water is being rationed off amongst your people, those with lower social status thirst and ask for your help.">
+			<id>1</id>
+			<Response1>Without much effort, you dip your fingers in your chalice and lightly sprinkle the sparse land below. The people are happy that rain has come their way. Some feel that this is a good sign and are gambling more </Response1>
+			<Response2>Without much effort, you dip your fingers in your chalice and lightly sprinkle the sparse land below. Your followers scramble out of their dilapidated residence to grab what they can in their dust filled buckets. Fights break out.</Response2>
+			<Response3>You dump a good portion of your chalice on to the lands below. A thunder storm forms and rain rages down. Your followers fill their dry buckets; all are content as there is more than enough water to go around.</Response3>
+			<Response4>You dump a good portion of your chalice on to the lands below. You seemed to have focused your water on one location, as a result, minor flooding occurs.</Response4>
+			<Response5>You take a heaping sip of water from your chalice and spit it out with much force. People rejoice as a hurricane ravages through the lands.</Response5>
+			<Response6> You take a heaping sip of water from your chalice and spit it out with much force.  A large hurricane forms over your peoples land, the winds ravage and tear up the houses of your people.</Response6>
+			<Response7>You conjure up a typhoon large enough that even you can see from your throne! Like a sponge, the land absorbs all of the excess water. Plants instantly come back to life and wells fill, your people are amazed and happy.</Response7>
+			<Response8>You conjure up a typhoon large enough that even you can see from your throne! As floods ravage the sparse land, your followers at lower elevations literally drown in your grace. Those few who were spared at least knew you had good intentions.</Response8>
+		</Events>
+		<Events badeventsvariation="An earthquake shakes the ground, people are thrown off balance and buildings wobble.">
+			<id>2</id>
+			<Response1>With little effort, you apply force using a single finger to counter act the quake. The quake shivers in fear to your touch and dissipates instantly. Your people are as equally amazed as you are.</Response1>
+			<Response2>With little effort, you apply force using a single finger to counter act the quake. The quake ceased in isolated locations.</Response2>
+			<Response3>Levitation</Response3>
+			<Response4>Failed levitation</Response4>
+			<Response5>You throw a mighty punch to the earth in the quakes opposite direction. Your punch was spot on and the quake quells, your people praise your strength and sharp thinking.</Response5>
+			<Response6>You throw a mighty punch to the earth in the quakes opposite direction. Unfortunately, your form was a little shaky and the quake only got stronger.</Response6>
+			<Response7>Stretching out your hands, you manage to shake the Earth in perfect harmony against the the quake. Your followers end up feeling none of the quakes strength while those in other areas are tossed around violently. Conveniently, they are all non-followers.</Response7>
+			<Response8>Quickly stretching out your hands, you attempt to shake the Earth against the quakes beat but due to your lack of musical talent, you manage to strengthen the quake ten fold!</Response8>
+		</Events>
+		<Events badeventsvariation="An unexpected blizzard hits your peoples land.">
+			<id>3</id>
+			<Response1>You perform a rite on your followers to prepare them for hibernation as the blizzard approaches. Sometime after the blizzard you nearly forgot about your followers. You quickly use the Sacred Air horn and wake up your followers to enjoy the warm Spring air.</Response1>
+			<Response2>You perform a rite on your followers to prepare them for hibernation as the blizzard approaches. However, you forgot to wake them up afterwards and some of your followers starve to death.</Response2>
+			<Response3>You send down Holy Shovels of Shoveling which have the ability to quickly cut through snow and (make it feel light as a feather). Knowing that your followers aren't immortal, you attach balloons to each shovel to allow for a safe decent.</Response3>
+			<Response4>You send down Holy Shovels of Shoveling which have the ability to quickly cut through snow and (make it feel light as a feather). Unfortunately, the Holy Shovels of Shoveling fall from the heavens at unsafe speeds resulting in impalement.</Response4>
+			<Response5>You unleash a fire breathing dragon which has been trained for 7 God years.  With precision and accuracy, the dragon breaths fire in specific areas careful to avoid your followers. Your followers are astonished by this act and praise Your Grace.</Response5>
+			<Response6>You unleash a fire breathing dragon it is untamed but you believe in it.  Due to your negligence, the dragon roasts your followers, however, the snow is clear.</Response6>
+			<Response7>You focus energy from the sun at your peoples land for a few seconds to melt snow. Your followers are relieved that their crops will be spared.</Response7>
+			<Response8>You place firewood on the sun to increase its intensity.  As a result, the snow quickly melts, however, a drought plagues your people. It's the thought that counts.</Response8>
+		</Events>
+		<Events badeventsvariation="A cyclone appears and begins ripping apart your peoples houses.">
+			<id>4</id>
+			<Response1>You clap the air so hard that you are able to cancel out the tornado. Your followers have created a new holiday call "The Lord's Clap Day" in honor of you</Response1>
+			<Response2>You clap the air so hard that you make the tornado into a hurricane. Your followers wondered how dumb you could be while they waited for the storm to pass</Response2>
+			<Response3>You sprayed a liquid that guarantees to make tornados go away. Instantly you go to buy more as your people praise you for stopping the tornado</Response3>
+			<Response4>You sprayed a liquid that guarantees to make tornados go away. Instantly you cringed at the screams and wails of your subjects as you peel away the false label that was on the spray bottle…..</Response4>
+			<Response5>You order the Avatar, the proclaimed "Master of all elements", to help you with your problem. Since he owned you a debt, he "gladly" help you and convince you people that he is your "disciple"…..</Response5>
+			<Response6>You order the Avatar, the proclaimed "Master of all elements", to help you with your problem. However, he's still pretty mad at you and increases the speeds of the winds</Response6>
+			<Response7>Your attempt to calm down the storm that you caused (What, how can she say that Xbox is better then PS4) came back successful, and your even able to some beautiful winds together "wink wink" that helps your followers</Response7>
+			<Response8>Your attempt to calm down the storm that you caused (What, how can she say that Atari 2600 is better then NES) came back unsuccessful, in fact, she increased her power.  You hear your people cry as you continue to contemplate whether or not to interfere.....</Response8>
+		</Events>
+		<Events badeventsvariation="A volcano dormant for thousands of years rumbles close to your people. Unknown to your people, this volcano is bound to blow soon.">
+			<id>5</id>
+			<Response1>You simply plug up the volcano, and the heat that is coming from the mountain fuel your followers famous "sfefse" springs</Response1>
+			<Response2>You plug up the volcano, unfortunately the plug was made of wood. It easily gives way and the resultant magma spews down on your followers </Response2>
+			<Response3>You send a vision to warn your followers to dig a trench to collect and divert the lava flow. Thankfully, it was received by Nisgith, the highly respected king. And the people were able to divert such a disaster </Response3>
+			<Response4>You send a vision to warn your followers to dig a trench to collect and divert the lava flow. It was received by Hojors, the town fool. No one paid heed and your followers lose a lot of their important buildings</Response4>
+			<Response5>Surprisingly, the volcano is now hidden under the giant rock that you dropped on top of it. Your people sing to you and of your "genius" plan </Response5>
+			<Response6>Maybe that huge fire and screams of your people are signs that  dropping that giant rock to try to cover the volcano was not your best idea……</Response6>
+			<Response7>Rolling a 20-sided dice to activate your godly water powers, you rolled a number that causes a heavy rain to fall on the volcano, thus putting it out forever</Response7>
+			<Response8>Rolling a 20-sided dice to activate your godly water powers, you rolled a 20, the "critical fail", and put your face into your hands as you just expedited the volcano's eruption</Response8>
+		</Events>
+		<Events badeventsvariation="One &quot;follower&quot; has started a movement against Your Grace as he believes the &quot;silly&quot; array of daily rituals such as the Holy Jumping Jacks are unnecessary.">
+			<id>15</id>
+			<Response1>You appear before the nay-sayer in a dream in all your glory… then smack him across the face. The next day he hastily ended the movement.</Response1>
+			<Response2>You beset the nay-sayer with nightmares and visions of inconceivable horror. Nothing has changed, he must have forgot his dreams.</Response2>
+			<Response3>You give the little heretic a plague of severe itchiness. He seems to have learned his lesson, and now everyday he does extra Holy Jumping Jacks.</Response3>
+			<Response4>You plagued the little heretic with relentless sneezing. He seems to have become angry and the movement continues.</Response4>
+			<Response5>You struck down the sinful rebel with a blinding flash of lightning. None of your follows skipped their Holy Jumping Jacks that day.</Response5>
+			<Response6>In your rage you hurled down a mighty thunderbolt to smite the sinful rebel, but you missed and hit the cheese-maker. The movement doubles in strength.</Response6>
+			<Response7>You unleash a vicious plague of mosquitos upon your people until they repent their sinful ways. The nay-sayer quickly loses all his support.</Response7>
+			<Response8>You reach to the sun and scoop a mighty fire-ball then drop it upon the rebellious movement. Many people died, but most of them were rebels… you know… probably.</Response8>
+		</Events>
+		<Events badeventsvariation="One follower claims to be a reincarnation of Your Grace and is speaking in your place.">
+			<id>6</id>
+			<Response1>Out of jealousy for his GORGEOUS hair, you give him bad hair days for the rest of his pitiful existence. A trend is set amongst your followers for this hairstyle.</Response1>
+			<Response2>Out of jealousy for his GORGEOUS hair, you give him bad hair days for the rest of his pitiful existence. As a result, his self confidence hinders considerably and he locks himself in his home. Your followers quickly forget about him.</Response2>
+			<Response3>When he claims to be better then you in League of Legends, that is when you draw the line. You challenge him to a 1v1 and impress your people with your impressive skills</Response3>
+			<Response4>When he claims to be better then you in League of Legends, that is when you draw the line. You challenge him to a 1v1 and embarrass yourself when he starts dancing over your champion's dead body</Response4>
+			<Response5>The Imposter seems to start flirting with one of the lady followers that you had your eyes on.  You instantly show your machismo and win the lady, and as you give her a night she won't forget, she starts spreading the news of your amazing skills </Response5>
+			<Response6>The Imposter seems to start flirting with one of the lady followers that you had your eyes on.  You try to show your machismo and win the lady, but you embarrass yourself and she spreads the news of the laughable exchange you two had </Response6>
+			<Response7>You simply get fed up with what he is doing and challenge him to the ultimate battle of DDR. You (rigged) showed off your skills to the people who are at awe, and finally put the imposter in his place </Response7>
+			<Response8>You simply get fed up with what he is doing and challenge him to the ultimate battle of DDR. You rigged the machine to make you win, but as taunt him showing your moves to the imposter, the machine explodes in your face and destroys some buildings</Response8>
+		</Events>
+		<Events badeventsvariation="An unorganized nomad tribe has stumbled upon your peoples land and has started an attack">
+			<id>7</id>
+			<Response1>You made them  disorganized, untrained and hostile to each other that all your people had to do was lock the city gates </Response1>
+			<Response2>You made them  disorganized, untrained and hostile to each other. However, it made some of them really dangerous and attack your people</Response2>
+			<Response3>You wanted to confuse the nomads with your confuse ray, and it worked. They thought it was a better idea to blockade your great Yo-Yo trade route with flowers. In actually, it brings more people into your cities and of course….. More money. </Response3>
+			<Response4>You wanted to confuse the nomads with your confuse ray, however it backfires and they get the great idea of blockading the great yo-yo trade route. Many people have died from a shortage of food…. And yo-yos</Response4>
+			<Response5>The nomads call upon their God and the both of you have a arm wrestling contest. You lost in the end, and your handprint killed some of your followers and made a new gaping canyon on the very important yo-yo trade route</Response5>
+			<Response6>The nomads call upon their God and the both of you have a arm wrestling contest. You lost in the end, and your handprint killed some of your followers and made a new gaping canyon on the very important yo-yo trade route</Response6>
+			<Response7>You cut the holy cheese that could kill anybody and use your impressive airbending skills to make it stay over the marauding nomads</Response7>
+			<Response8>You cut the holy cheese that could kill anybody and use your impressive airbending skills to make it stay over the marauding nomads, however, a fly broke your concentration and you made it encompass your people too</Response8>
+		</Events>
+		<Events badeventsvariation="A neighboring nation has disrupted your peoples thousand year Yo-Yo trade route.">
+			<id>8</id>
+			<Response1>You honestly could care less about your people's Yo-Yo trade route as you've recently gotten into Cubing. However, you decide to place a hastily put together vision in the trade masters head in which he slides four inflatable life savers under each leg of a camel in preparation for sea travel as an alternate route. Trade continues again but at a slower pace.</Response1>
+			<Response2>You honestly could care less about your people's Yo-Yo trade route as you've recently gotten into Cubing. However, you decide to place a hastily put together vision in the trade masters head in which he slides four inflatable life savers under each leg of a camel in preparation for sea travel as an alternate route. The trade master poorly interprets the vision and go ahead and tries to put all four legs of every camel into one lifesaver.  They all toppled and drowned......</Response2>
+			<Response3>You attempt to conjure up a mirage of the Yo-Yo merchants in front of the attackers. The attackers easily fall for the mirage, when they finally reach the faux merchants, they are presented with stacks of Yo-Yo catalogues which the attackers never really took the time to look at. They are now interested in opening a trade route with your people.</Response3>
+			<Response4>You attempt to conjure up a mirage of the Yo-Yo merchants in front of the attackers as a distraction for the attackers. One of the attackers uses their binoculars only to prove that the mirage is nothing but a stack of Yo-Yo catalogues. The attackers are infuriated and now have a personal vendetta against Yo-Yo's and anyone who trades them.</Response4>
+			<Response5>As unimaginative as it may sound, you part the waves of a nearby ocean indefinitely. Not only does this boom the Yo-Yo trade for your people, it also creates a temporary surplus of food for your people as they simply pluck fish from the oceans walls.</Response5>
+			<Response6>As unimaginative as it may sound, you part the waves of a nearby ocean indefinitely. Unfortunately, you start the wave parting too close to your people's seaport, as a result, essential fishing ships and other vessels topple over. Your people starve… because of your obsession for Yo-Yo's. </Response6>
+			<Response7>To eliminate the problem completely, you decide to rain meteors amongst the neighboring nation. Despite the neighboring nation committing multiple atrocities, they did not think that they would perish due to a children's toy. They are eliminated completely and the trade route resumes.</Response7>
+			<Response8>To eliminate the problem completely, you decide to rain meteors amongst the neighboring nation. Unbeknownst to you, upper atmosphere winds of approximately 800 miles per hour hurl the meteors off their intended path and end up hitting your followers land. The thousand year old Yo-Yo shop is damaged indefinitely. good job</Response8>
+		</Events>
+		<Events badeventsvariation="A neighboring nation has initiated an attack against your people. The cause seems to come from their crushing defeat at the last sports ball match.">
+			<id>9</id>
+			<Response2>blank</Response2>
+			<Response3>blank</Response3>
+			<Response4>blank</Response4>
+			<Response5>blank</Response5>
+			<Response6>blank</Response6>
+			<Response7>blank</Response7>
+			<Response8>blank</Response8>
+		</Events>
+		<Events badeventsvariation="Giant robots, who are more than meets the iris, descend from the heavens.">
+			<id>10</id>
+			<Response1>As the giant robots descend, you quickly replace the ground below them with quicksand. Your followers fear quickly turns into laughter.</Response1>
+			<Response2>You summon a drizzle of rain. The robots quickly short circuit and explode.  A few unlucky followers were recipients of shrapnel to their cranial area.</Response2>
+			<Response3>You send a deadly plague to exterminate the robots, however, the robots are not affected. Your followers become deathly ill.</Response3>
+			<Response4>You perform you roll as the "God of Rock"  by blowing the theoretical roof off. The robots break down in tears according to your magnificent rifts and chords. They leave with intentions of sharing divine tunes with other robot citizens. Your followers are spared. </Response4>
+			<Response5>You open a time rift from another dimension and summon the holy tank ready for command by your people.</Response5>
+			<Response6>You smite the giant robot with a bolt of lightning, with its batteries recharged it moves on its way for destruction.</Response6>
+			<Response7>You snap your fingers and the robots spontaneously explode. You quietly yet confidently say "got 'em" as the accompanied wind blows shrapnel into a nearby non-worshiping nation.</Response7>
+			<Response8>You snap your fingers and the robots spontaneously explode. You quietly yet confidently say "got 'em… oh wait" as the lack of wind allows shrapnel to rain down on your followers.</Response8>
+		</Events>
+		<Events badeventsvariation="Zombie apoc">
+			<id>11</id>
+			<Response1>You made the undead dead again before they could infect anyone. Your followers praise you</Response1>
+			<Response2>You made the undead dead again before they could affect anyone. But your followers question if you are all powerful for not stopping the transformation</Response2>
+			<Response3>You teleport a squad of four zombie killing soldiers. They are confused but kill all the zombies anyway. They teleport away claiming to be on an important mission while your followers are left unscathed</Response3>
+			<Response4>You teleport a squad of four zombie killing soldiers. Unfortunately, they only survived for a little while and you followers have to flee the area</Response4>
+			<Response5>You throw your golden lasso of power to capture the zombies. The people praise you on your cowboy skills </Response5>
+			<Response6>You throw your golden lasso of power to capture the zombies but you haven't been practicing. Most were caught but some still killed your followers</Response6>
+			<Response7>You throw one of your scientist new concoction onto the world, it has never been tested. But luckily, it returns the undead back to their youthful selves. And the people clap and sing for joy on Your Grace </Response7>
+			<Response8>You throw one of your scientist new concoction onto the world, it has never been tested. Unluckily, it anyone that the concoction touches turns into a zombie.</Response8>
+		</Events>
+		<Events badeventsvariation="Guy with glowing red stick appears">
+			<id>-1</id>
+			<Response1>You see him trying to command your followers in giving him things. You appear before him alone and make him pay dearly for these injustices…….</Response1>
+			<Response2>You see him trying to command your followers in giving him things. You appear before him in front of your people to stop him, but he  goes on a little rampage before you're able to stop him.</Response2>
+			<Response3>He loses control and starts attacking your people. Luckily, you're able to drop in and subdue him and make him your minion… I mean a disciple</Response3>
+			<Response4>He loses control and starts attacking your people. Trying to act as the big hero, you confront him. Unfortunately, you "slipped" on a banana and "allowed" him to leave the town</Response4>
+			<Response5>To make him leave, you go into his mind and make the most annoying person that he has ever met appear in front of him. Since he is unable to kill this person, he just leaves.</Response5>
+			<Response6>To make him leave, you go into his mind and make the most annoying person that he has ever met appear in front of him. The man with the red stick leaves, but you forgot to make the  other person disappear and he annoys the crap out of your followers </Response6>
+			<Response7>You stop him and find intel that shows that a giant space ball is coming your way. Using your awesome ninja moves, your able to sneak onto the space ball and singlehandedly bring it under your control</Response7>
+			<Response8>You stop him, but that only lead to a giant space ball  orbiting your planet, and before you could do anything. It shoots a massive laser, destroying a huge chuck of your lands</Response8>
+		</Events>
+		<Events badeventsvariation="Nothing incredible has happened lately. Your people are bored and complaining, one of them is kicking a tumble weed.">
+			<id>12</id>
+			<Response1>Using your brush of magnificence, you paint the sky with a marvelous rainbow. Your people enjoy the sight and praise Your Grace.</Response1>
+			<Response2>You hastily conjure up a clown and have him appear upon your people. Your people feel rather uncomfortable around this clown who seems to be quite fond of spoons. All of his jokes have something to do with spoons.</Response2>
+			<Response3>In an act of generosity, you drip water from your chalice upon the village crops. The villagers rejoice in their harvest.</Response3>
+			<Response4>blank</Response4>
+			<Response5>BLANK</Response5>
+			<Response6>You strike down one of your followers with a brilliant flash of lightning. They certainly aren't bored anymore.</Response6>
+			<Response7>In a fit of anger, you rain fire down and it somehow forms lights in the north. They look at it in awe and are entertained </Response7>
+			<Response8>In a fit of anger, you rain fire down upon the villagers! Are they not entertained?</Response8>
+		</Events>
+		<Events badeventsvariation="A large number of sheep begin to appear within your peoples town.">
+			<id>13</id>
+			<Response1>They seem to be docile enough. So you instruct your followers to herd them to the fields, where they continue to gaze and provide food for your people</Response1>
+			<Response2>They seem to be docile enough. So you instruct your followers to herd them to the fields. Unfortunately, they turn out to be disguised thieves  and steal some of your town's prized possessions and statues of you in the middle of the night</Response2>
+			<Response3>You instruct your people to save some of the sheep for their wool. While they go to shear them, they see that one of sheep's wool was used to hide treasure, lots of it. Your followers are happy from this terrific outcome </Response3>
+			<Response4>You instruct your people to save some of the sheep for their wool. While they go to shear them, they get infected by a virus that transmit through the touch of their wool. The people cry on how you let this happen</Response4>
+			<Response5>As your town goes to slaughter the sheep for food, it is reveled that one of the sheep is the personal pet of udpof, the God of the wopesde people. Using your impressive charisma, you negotiate a way for your followers to feast on the delicious sheep while returning the pet</Response5>
+			<Response6>As your town goes to slaughter the sheep for food, it is reveled that one of the sheep is the personal pet of udpof, the God of the wopesde people. During your negotiations, you sneezed in his face, which is an insult in his eyes. With him saying the magic words, his pet starts destroying your people</Response6>
+			<Response7>At the sight of the sheep you grow hungry, so you ordered your followers to hastily  sacrifice one of them to you. As they start the ritual, the sheep's defense mechanisms kick in but messes up, transforming him into a giant sheep which you share with the people</Response7>
+			<Response8>At the sight of the sheep you grow hungry, so you ordered your followers to hastily  sacrifice one of them to you. As they start the ritual, the sheep's defense mechanisms kick in, transforming him into a giant man-killing sheep who terrorize your people</Response8>
+		</Events>
+		<Events badeventsvariation="WILDFIRE">
+			<id>14</id>
+			<Response1>Looking directly at the fire, you start shedding tears that rains down and put out the fire. Your followers thank you for your grace </Response1>
+			<Response2>Looking directly at the fire, you start shedding tears that rains down and put out the fire, but you continue and flood some parts of your land</Response2>
+			<Response3>BLANK</Response3>
+			<Response4>BLANK</Response4>
+			<Response5>BLANK</Response5>
+			<Response6>BLANK</Response6>
+			<Response7>BLANK</Response7>
+			<Response8>BLANK</Response8>
+		</Events>
+		<Events badeventsvariation="One follower is trying to rebel against you">
+			<id>15</id>
+			<Response1>BLANK</Response1>
+			<Response2>BLANK</Response2>
+			<Response3>BLANK</Response3>
+			<Response4>BLANK</Response4>
+			<Response5>BLANK</Response5>
+			<Response6>BLANK</Response6>
+			<Response7>BLANK</Response7>
+			<Response8>BLANK</Response8>
+		</Events>
+		<Events badeventsvariation="SANDWORM">
+			<id>16</id>
+			<Response1>BLANK</Response1>
+			<Response2>BLANK</Response2>
+			<Response3>BLANK</Response3>
+			<Response4>BLANK</Response4>
+			<Response5>BLANK</Response5>
+			<Response6>BLANK</Response6>
+			<Response7>You summon the infamous SAND BIRD which you got as a gift from a merchant who is totally not suspicious which also sold SAND CATS. The Sand Bird quickly swoops in and snatches the Sand Worm. Your followers cannot believe what just happened and place all the (deserved) effort on Your Grace.</Response7>
+			<Response8>BLANK</Response8>
+		</Events>
+		<Events badeventsvariation="PARALLEL DIMENSION OPENS">
+			<id>17</id>
+			<Response1>BLANK</Response1>
+			<Response2>BLANK</Response2>
+			<Response3>BLANK</Response3>
+			<Response4>BLANK</Response4>
+			<Response5>BLANK</Response5>
+			<Response6>BLANK</Response6>
+			<Response7>BLANK</Response7>
+			<Response8>BLANK</Response8>
+		</Events>
+		<Events badeventsvariation="DRAGON ATTACKS CITY">
+			<id>-1</id>
+			<Response1>undead mage?</Response1>
+			<Response2>BLANK</Response2>
+			<Response3>BLANK</Response3>
+			<Response4>BLANK</Response4>
+			<Response5>BLANK</Response5>
+			<Response6>BLANK</Response6>
+			<Response7>BLANK</Response7>
+			<Response8>Unleash own dragon to fight dragon, many casualties but got to watch a dragon fight</Response8>
+		</Events>
+		<Events badeventsvariation="blah">
+			<id>-1</id>
+			<Response1>blah</Response1>
+			<Response2>b;ah</Response2>
+			<Response3>sdfs</Response3>
+			<Response4>efewfw</Response4>
+			<Response5>sfsf</Response5>
+			<Response6>[gkd[pg</Response6>
+			<Response7>fgdfgdg</Response7>
+			<Response8>epogeog</Response8>
+		</Events>
+	</Badevents>
+</BadeventsCollection>
