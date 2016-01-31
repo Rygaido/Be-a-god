@@ -14,6 +14,10 @@ public class MainEngine : MonoBehaviour
      int playerChoice;
 	static bool timerRunning;
 
+    public static int totalFollowersLost = 0;
+   // public static int highestFollowers = 0;
+    public static int yearsLasted = 0;
+
     bool eventHasOccurredJan;
     bool eventHasOccurredFeb;
     bool eventHasOccurredMar;
@@ -59,7 +63,8 @@ public class MainEngine : MonoBehaviour
 
 	public static void NewSacrificeMade(int numberSaced){
 		timerRunning = true;
-		numberofFollowers -= numberSaced;
+        numberOfFollowersUpdate(-numberSaced);
+        //numberofFollowers -= numberSaced;
 		powerLeft += numberSaced * 4;
 		//MainEngine.singleton.badEvent (1);
 	}
@@ -396,6 +401,7 @@ public class MainEngine : MonoBehaviour
         Debug.Log("Good Event Occurred with severity of " + eventSeverity);
 		UIMain.NewEvent ("Good event", new string[]{"option1","o2"}, new int[]{0,12}, (1 +eventSeverity) * -1);
 		UIMain.NewOutcome ("Good EventResolution");
+        GoodEventEnd(0, eventSeverity);
     }
 
 	public void GoodEventEnd(int optionSelected,int sevarity)
@@ -413,8 +419,12 @@ public class MainEngine : MonoBehaviour
         timerRunning = true;
     }
 
-    void numberOfFollowersUpdate(int k)
+    static void numberOfFollowersUpdate(int k)
     {
+        if(k < 0)
+        {
+            totalFollowersLost -= k;
+        }
         numberofFollowers += k;
     }
 
@@ -452,7 +462,8 @@ public class MainEngine : MonoBehaviour
     //After an year ends i.e. timer expires, timer is reset to 360 seconds
     void reInitialization()
     {
-        
+        yearsLasted += 1;
+
         timeForSacrifice();
 		eventCounter = 12;
 		yearTimer = 120.0f;
