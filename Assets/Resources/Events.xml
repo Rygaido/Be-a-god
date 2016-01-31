@@ -42,7 +42,7 @@
 			<Response8>Your attempt to calm down the storm that you caused (What, how can she say that Atari 2600 is better then NES) came back unsucessful, in fact, she increased her power.  You hear your people cry as you continue to contemplate whether or not to interfere.....</Response8>
 		</Events>
 		<Events badeventsvariation="A volcano dormant for thousands of years rumbles close to your people. Unknown to your people, this volcano is bound to blow soon.">
-			<Response1>You simply pug up the volcano, and the heat that is coming from the mountain fuel your followers famous "sfefse" springs</Response1>
+			<Response1>You simply plug up the volcano, and the heat that is coming from the mountain fuel your followers famous "sfefse" springs</Response1>
 			<Response2>You plug up the volcano, unfortunately the plug was made of wood. It easily gives way and the resultant magma spews down on your followers </Response2>
 			<Response3>You send a vision to warn your followers to dig a trench to collect and divert the lava flow. Thanfully, it was received by Nisgith, the highly respected king. And the people were able to divert such a disaster </Response3>
 			<Response4>You send a vision to warn your followers to dig a trench to collect and divert the lava flow. It was received by Hojors, the town fool. No one paid heed and your followers lose a lot of their important buildings</Response4>
@@ -82,16 +82,6 @@
 			<Response8>You cut the holy cheese that could kill anybody and use your impressive airbending skills to make it stay over the maurading nomads, however, a fly broke your concentration and you made it encompass your people too</Response8>
 		</Events>
 		<Events badeventsvariation="A neighboring nation has disrupted your peoples thousand year Yo-Yo trade route.">
-			<Response1>Staring at a nearby mountain reveals its hidden content to your followers. They rejoice at the new and improve yo-yos that they now poccess</Response1>
-			<Response2>Staring at a nearby mountain reveals its hidden content to your followers. They gnat their teeth in frustration as a foul odor premeates the air for the next few weeks</Response2>
-			<Response3>You in your inteligent foresight have told your people to stockpile yo-yos just in case a situation such as this happened. They find it and spread the news of your huge care for the people </Response3>
-			<Response4>You in your inteligent foresight have told your people to stockpile yo-yos just in case a situation such as this happened.You just don't remember where it is and your people are mad that you lost some of their most prized possessions.</Response4>
-			<Response5>In your frustration in trying to find a solution to this problem, you kick over your chest full of toys. It rains down on your people, and they are at awe at how gracious you are to share.</Response5>
-			<Response6>In your frustration in trying to find a solution to this problem, you kick over your chest full of mousetraps. As the mousetraps fall, your follower look at the horror  at how such an evil contraption could rain down from the heavens </Response6>
-			<Response7>Listening to the cries of your people, you summoned a giant yo-yo in the middle of town square. It obeys your people, providing joy and happiness for them. It is also an item that the neighborring coutry covets </Response7>
-			<Response8>Listening to the cries of your people, you summoned a giant yo-yo in the middle of town square.However, It starts to rampage and destorys some of your people and their buildings. </Response8>
-		</Events>
-		<Events badeventsvariation="A neighboring nation has initiated an attack against your people. The cause seems to come from their crushing defeat at the last sports ball match.">
 			<Response1>You honestly could care less about your people's Yo-Yo trade route as you've recently gotten into Cubing. However, you decide to place a hastily put together vision in the trade masters head in which he slides four inflatable life savers under each leg of a camel in preparation for sea travel as an alternate route. Trade continues again but at a slower pace.</Response1>
 			<Response2>You honestly could care less about your people's Yo-Yo trade route as you've recently gotten into Cubing. However, you decide to place a hastily put together vision in the trade masters head in which he slides four inflatable life savers under each leg of a camel in preparation for sea travel as an alternate route. The trade master poorly interprets the vision (???)</Response2>
 			<Response3>You attempt to conjure up a mirage of the Yo-Yo merchants in front of the attackers as a distraction for the attackers. The attackers easily fall for the mirage, when they finally reach the faux merchants, they are presented with stacks of Yo-Yo catalogues which the attackers never really took the time to look at. They are now interested in opening a trade route with your people.</Response3>
@@ -100,6 +90,16 @@
 			<Response6>As unimaginative as it may sound, you part the waves of a nearby ocean indefinitely. Unfortunately, you start the wave parting too close to your people's seaport, as a result, essential fishing ships and other vessels topple over. Your people starve… because of your obsession for Yo-Yo's. </Response6>
 			<Response7>To eliminate the problem completely, you decide to rain meteors amongst the neighboring nation. Despite the neighboring nation committing multiple atrocities, they did not think that they would perish due to a children's toy. They are eliminated completely and the trade route resumes.</Response7>
 			<Response8>To eliminate the problem completely, you decide to rain meteors amongst the neighboring nation. Unbeknownst to you, upper atmosphere winds of approximately 800 miles per hour hurl the meteors off their intended path and end up hitting your followers land. The thousand year old Yo-Yo shop is damaged indefinitely. good job</Response8>
+		</Events>
+		<Events badeventsvariation="A neighboring nation has initiated an attack against your people. The cause seems to come from their crushing defeat at the last sports ball match.">
+			<Response1>blank</Response1>
+			<Response2>blank</Response2>
+			<Response3>blank</Response3>
+			<Response4>blank</Response4>
+			<Response5>blank</Response5>
+			<Response6>blank</Response6>
+			<Response7>blank</Response7>
+			<Response8>blank</Response8>
 		</Events>
 		<Events badeventsvariation="Giant robots, who are more than meets the iris, descend from the heavens.">
 			<Response1>As the giant robots descend, you quickly replace the ground below them with quicksand. Your followers fear quickly turns into laughter.</Response1>
@@ -135,8 +135,10 @@
 			<Response1>Using your brush of magnificence, you paint the sky with a marvelous rainbow. Your people enjoy the sight and praise Your Grace.</Response1>
 			<Response2>You hastily conjure up a clown and have him appear upon your people. Your people feel rather uncomfortable around this clown who seems to be quite fond of spoons. All of his jokes have something to do with spoons.</Response2>
 			<Response3>In an act of generosity, you drip water from your chalice upon the village crops. The villagers rejoice in their harvest.</Response3>
+			<Response4>blank</Response4>
 			<Response5>BLANK</Response5>
 			<Response6>You strike down one of your followers with a brilliant flash of lightning. They certainly aren't bored anymore.</Response6>
+			<Response7>blank</Response7>
 			<Response8>In a fit of anger, you rain fire down upon the villagers! Are they not entertained?</Response8>
 		</Events>
 		<Events badeventsvariation="A large number of sheep begin to appear within your peoples town.">

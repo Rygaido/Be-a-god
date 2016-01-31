@@ -389,7 +389,7 @@ public class MainEngine : MonoBehaviour
         
         followers.Calm ();
         Debug.Log("Neutral Event Occurred");
-		UIMain.NewEvent ("NeutralEvent",new string[0],new int[0],0);
+		UIMain.NewEvent (chooserofeventts.Nec.events[0].neutraleventsvariation,new string[0],new int[0],0);
         timerRunning = true;
     }
 
@@ -397,25 +397,29 @@ public class MainEngine : MonoBehaviour
     void goodEvent(int eventSeverity)
     {
 		followers.Celebrate ();
+		//Grando = Random.Range (0, 15);
 		//timerRunning = false;
         Debug.Log("Good Event Occurred with severity of " + eventSeverity);
-		UIMain.NewEvent ("Good event", new string[]{"option1","o2"}, new int[]{0,12}, (1 +eventSeverity) * -1);
-		UIMain.NewOutcome ("Good EventResolution");
+		UIMain.NewEvent (chooserofeventts.Gec.events[0].goodeventsvariation,new string[0],new int[0],0);
+		//UIMain.NewEvent ("Good event", new string[]{"option1","o2"}, new int[]{0,12}, (1 +eventSeverity) * -1);
+		//UIMain.NewOutcome ("Good EventResolution");
         GoodEventEnd(0, eventSeverity);
     }
 
 	public void GoodEventEnd(int optionSelected,int sevarity)
     {
         
-        if (sevarity==0)
-			numberOfFollowersUpdate(5);
-
-		
-		else if(sevarity==1)
-			numberOfFollowersUpdate(10);
-		
-		else if (sevarity == 2)
-			numberOfFollowersUpdate(15);
+        if (sevarity == 0) {
+			numberOfFollowersUpdate (5);
+			UIMain.NewOutcome (chooserofeventts.Gec.events [0].response1);
+		} else if (sevarity == 1) {
+			numberOfFollowersUpdate (10);
+			UIMain.NewOutcome (chooserofeventts.Gec.events [0].response2);
+		} else if (sevarity == 2) 
+		{
+			numberOfFollowersUpdate (15);
+			UIMain.NewOutcome (chooserofeventts.Gec.events [0].response3);
+		}
         timerRunning = true;
     }
 
