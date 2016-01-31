@@ -11,9 +11,17 @@ public class MainEngine : MonoBehaviour
     public static int numberofFollowers;
     public static int powerLeft;
     int followersIncreaseTimes;
-     int playerChoice;
+    int playerChoice;
 	static bool timerRunning;
+    public AudioClip followersLargeSound;
+    public AudioClip followersSmallSound;
+    public AudioClip goodEventSound;
+    public AudioClip goodDecisionSound;
+    public AudioClip badEventSound;
+    public AudioClip badDecisionSound;
 
+    AudioSource audio;
+    
     public static int totalFollowersLost = 0;
    // public static int highestFollowers = 0;
     public static int yearsLasted = 0;
@@ -43,7 +51,8 @@ public class MainEngine : MonoBehaviour
         numberofFollowers = 100;
         powerLeft = 0;
 		timeForSacrifice();
-        
+        audio = GetComponent<AudioSource>();
+
         eventCounter = 12;
         eventHasOccurredJan = false;
         eventHasOccurredFeb = false;
@@ -79,6 +88,7 @@ public class MainEngine : MonoBehaviour
     //@param is the severity of event, 0: mild 1: so-so 2:severe
     void badEvent(int eventSeverity)
     {
+        audio.PlayOneShot(badEventSound);
 		followers.Panic ();
         Debug.Log("Bad Event Occurred with severity of " + eventSeverity);
 		timerRunning = false;
@@ -107,6 +117,7 @@ public class MainEngine : MonoBehaviour
 				if(randomResponse <=8)
 				{
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response1);
+                    audio.PlayOneShot(goodDecisionSound);
 
 					followersChange(1);
 				}
@@ -115,8 +126,8 @@ public class MainEngine : MonoBehaviour
 				{
 
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response2);
-
-					followersChange(-3);
+                    audio.PlayOneShot(badDecisionSound);
+                    followersChange(-3);
 				}
 			}
 			
@@ -128,15 +139,15 @@ public class MainEngine : MonoBehaviour
 				if(randomResponse <= 6)
 				{
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response1);
-
-					followersChange(2);
+                    audio.PlayOneShot(goodDecisionSound);
+                    followersChange(2);
 				}
 				
 				else 
 				{
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response2);
-
-					followersChange(-9);
+                    audio.PlayOneShot(badDecisionSound);
+                    followersChange(-9);
 				}
 			}
 			
@@ -149,16 +160,16 @@ public class MainEngine : MonoBehaviour
 				{
 
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response1);
-
-					followersChange(4);
+                    audio.PlayOneShot(goodDecisionSound);
+                    followersChange(4);
 				}
 				
 				else 
 				{
 
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response2);
-
-					followersChange(-14);
+                    audio.PlayOneShot(badDecisionSound);
+                    followersChange(-14);
 				}
 
 			}
@@ -175,16 +186,16 @@ public class MainEngine : MonoBehaviour
 				{
 					
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response3);
-
-					followersChange(4);
+                    audio.PlayOneShot(goodDecisionSound);
+                    followersChange(4);
 				}
 				
 				else 
 				{
 					
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response4);
-
-					followersChange(-8);
+                    audio.PlayOneShot(badDecisionSound);
+                    followersChange(-8);
 				}
 			}
 			
@@ -197,36 +208,37 @@ public class MainEngine : MonoBehaviour
 				{
 					
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response3);
-
-					followersChange(4);
+                    audio.PlayOneShot(goodDecisionSound);
+                    followersChange(4);
 				}
 				
 				else 
 				{
 					
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response4);
-
-					followersChange(-4);
+                    audio.PlayOneShot(badDecisionSound);
+                    followersChange(-4);
 				}
 			}
 			
 			else if (eventSeverity == 2)
 			{
-				//numberOfFollowersUpdate(-7);
 				powerUpdate(-10);
 				int randomResponse = Random.Range(1,11);
 				if(randomResponse <=4)
 				{
 					
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response3);
-					followersChange(6);
+                    audio.PlayOneShot(goodDecisionSound);
+                    followersChange(6);
 				}
 				
 				else 
 				{
 					
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response4);
-					followersChange(-12);
+                    audio.PlayOneShot(badDecisionSound);
+                    followersChange(-12);
 				}
 			}
 		}
@@ -242,7 +254,8 @@ public class MainEngine : MonoBehaviour
 				{
 					
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response5);
-					followersChange(6);
+                    audio.PlayOneShot(goodDecisionSound);
+                    followersChange(6);
 				}
 				
 				else 
@@ -250,7 +263,8 @@ public class MainEngine : MonoBehaviour
 					
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response6);
 					followersChange(-3);
-				}
+                    audio.PlayOneShot(badDecisionSound);
+                }
 			}
 			
 			else if (eventSeverity == 1)
@@ -262,14 +276,16 @@ public class MainEngine : MonoBehaviour
 				{
 					
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response5);
-					followersChange(6);
+                    audio.PlayOneShot(goodDecisionSound);
+                    followersChange(6);
 				}
 				
 				else 
 				{
 					
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response6);
-					followersChange(-4);
+                    audio.PlayOneShot(badDecisionSound);
+                    followersChange(-4);
 				}
 			}
 			
@@ -282,14 +298,16 @@ public class MainEngine : MonoBehaviour
 				{
 					
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response5);
-					followersChange(8);
+                    audio.PlayOneShot(goodDecisionSound);
+                    followersChange(8);
 				}
 				
 				else 
 				{
 					
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response6);
-					followersChange(-8);
+                    audio.PlayOneShot(badDecisionSound);
+                    followersChange(-8);
 				}
 			}
 		}
@@ -305,14 +323,16 @@ public class MainEngine : MonoBehaviour
 				{
 					
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response7);
-					followersChange(14);
+                    audio.PlayOneShot(goodDecisionSound);
+                    followersChange(14);
 				}
 				
 				else 
 				{
 					
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response8);
-					followersChange(-10);
+                    audio.PlayOneShot(badDecisionSound);
+                    followersChange(-10);
 				}
 			}
 			
@@ -325,14 +345,16 @@ public class MainEngine : MonoBehaviour
 				{
 					
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response7);
-					followersChange(10);
+                    audio.PlayOneShot(goodDecisionSound);
+                    followersChange(10);
 				}
 				
 				else 
 				{
 					
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response8);
-					followersChange(-7);
+                    audio.PlayOneShot(badDecisionSound);
+                    followersChange(-7);
 				}
 			}
 			
@@ -345,14 +367,16 @@ public class MainEngine : MonoBehaviour
 				{
 					
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response7);
-					followersChange(8);
+                    audio.PlayOneShot(goodDecisionSound);
+                    followersChange(8);
 				}
 				
 				else 
 				{
 					
 					UIMain.NewOutcome(chooserofeventts.ec.events[rando].response8);
-					followersChange(-13);
+                    audio.PlayOneShot(badDecisionSound);
+                    followersChange(-13);
 				}
 			}
 		}
@@ -364,7 +388,8 @@ public class MainEngine : MonoBehaviour
 			{
 				//numberOfFollowersUpdate(-7);
 				followersChange(-5);
-				powerUpdate(0);
+                audio.PlayOneShot(badDecisionSound);
+                powerUpdate(0);
 			}
 			
 			else if (eventSeverity == 1)
@@ -372,14 +397,16 @@ public class MainEngine : MonoBehaviour
 				//numberOfFollowersUpdate(-7);
 				followersChange(-10);
 				powerUpdate(0);
-			}
+                audio.PlayOneShot(badDecisionSound);
+            }
 			
 			else if (eventSeverity == 2)
 			{
 				//numberOfFollowersUpdate(-7);
 				followersChange(-20);
 				powerUpdate(0);
-			}
+                audio.PlayOneShot(badDecisionSound);
+            }
 		}
 	}
 
@@ -396,6 +423,7 @@ public class MainEngine : MonoBehaviour
     //Details on what happens in a good event
     void goodEvent(int eventSeverity)
     {
+        audio.PlayOneShot(goodEventSound);
 		followers.Celebrate ();
 		//Grando = Random.Range (0, 15);
 		//timerRunning = false;
