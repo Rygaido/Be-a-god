@@ -4,6 +4,13 @@ using UnityEngine.UI;
 //attached to main Canvas
 public class UIMain : MonoBehaviour
 {
+    [SerializeField]
+    private Transform powerDisplay;
+    [SerializeField]
+    private Transform followersDisplay;
+    [SerializeField]
+    private GameObject text;
+
 	[SerializeField]
 	private civilian_manager civilianManager;
 
@@ -46,6 +53,44 @@ public class UIMain : MonoBehaviour
 
     //Called by gamelogic
     #region
+    public static void FollowerChanged(bool bGreen,int number)
+    {
+        singleton.FollowerChangedP(bGreen, number);
+    }
+
+    public static void PowerChanged(bool bGreen, int number)
+    {
+        singleton.PowerChangedP(bGreen, number);
+    }
+    private void PowerChangedP(bool bGreen, int number)
+    {
+        GameObject go = Instantiate(text, followersDisplay.position, followersDisplay.rotation) as GameObject;
+        if (number > 0)
+        {
+            go.GetComponent<NumberChanged>().text = "+" + number;
+            go.GetComponent<NumberChanged>().color = Color.green;
+        }
+        else
+        {
+            go.GetComponent<NumberChanged>().text = "-" + Mathf.Abs(number);
+            go.GetComponent<NumberChanged>().color = Color.red;
+        }
+    }
+    private void FollowerChangedP(bool bGreen,int number)
+    {
+        GameObject go = Instantiate(text, followersDisplay.position, followersDisplay.rotation) as GameObject;
+        if (number > 0)
+        {
+            go.GetComponent<NumberChanged>().text = "+" + number;
+            go.GetComponent<NumberChanged>().color = Color.green;
+        }
+        else
+        {
+            go.GetComponent<NumberChanged>().text = "-" + Mathf.Abs(number);
+            go.GetComponent<NumberChanged>().color = Color.red;
+        }
+    }
+
 	public static void NewEvent (string discription, string[] options, int[] cost, int severity)
     {
 		singleton.NewEventP(discription,options,cost,severity);
