@@ -98,6 +98,7 @@ public class UIMain : MonoBehaviour
             go.GetComponent<NumberChanged>().color = Color.red;
         }
         go.transform.parent = backGround;
+        go.transform.Translate(new Vector2(Random.Range(0, 100), 0));
     }
 
 	public static void NewEvent (string discription, string[] options, int[] cost, int severity,int picture)
@@ -123,21 +124,24 @@ public class UIMain : MonoBehaviour
     {
         //output int of index of option
 		Debug.Log ("OptionSelected");
-		NewOutcome ("Selected button :" + index);
+		//NewOutcome ("Selected button :" + index);
         if (currentState == State.Options)
         {
             if (severity == 0)
             {
                 //nutralEvent
+                Debug.Log("Nutral");
             }
             else if (severity > 0)
             {
                 //bad event
                 MainEngine.singleton.BadEventEnd(index, severity - 1);
+                Debug.Log("good");
             }
             else {
                 //good event
                 MainEngine.singleton.GoodEventEnd(index, (severity * -1) - 1);
+                Debug.Log("Bad");
             }
         }
     }

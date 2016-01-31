@@ -407,7 +407,8 @@ public class MainEngine : MonoBehaviour
 				powerUpdate(0);
                 audio.PlayOneShot(badDecisionSound);
             }
-		}
+            UIMain.NewOutcome("You sit back and watch as your loyal followers died a gruesome death");
+        }
 	}
 
     //Detalis on what happens in a neutral event
@@ -779,7 +780,9 @@ public class MainEngine : MonoBehaviour
             int randomlyIncreaseFollowers = Random.Range(0, 3);
             if (randomlyIncreaseFollowers == 2)
             {
-                numberofFollowers += Random.Range(0, 3);
+                int increase = Random.Range(0, 3);
+                numberofFollowers += increase;
+                UIMain.FollowerChanged(true, increase);
                 followersIncreaseTimes--;
             }
 
