@@ -86,6 +86,8 @@ public class UIMain : MonoBehaviour
         if(numberInput.text.Length > 0)
         {
 			MainEngine.NewSacrificeMade(Mathf.Clamp(int.Parse(numberInput.text), 1, limit));
+			UIMain.NewEvent("The Sacrifice Ritual went well",new string[0],new int[0],0);
+			UIMain.NewOutcome("There was much blood");
         }
         //output number chosen (fromInput field)
     }

@@ -39,7 +39,7 @@ public class MainEngine : MonoBehaviour
         powerLeft = 0;
 		timeForSacrifice();
         
-        eventCounter = Random.Range(0, 4);
+        eventCounter = 4;
         eventHasOccurredJan = false;
         eventHasOccurredFeb = false;
         eventHasOccurredMar = false;
@@ -393,8 +393,10 @@ public class MainEngine : MonoBehaviour
     void goodEvent(int eventSeverity)
     {
 		followers.Celebrate ();
+		//timerRunning = false;
         Debug.Log("Good Event Occurred with severity of " + eventSeverity);
 		UIMain.NewEvent ("Good event", new string[]{"option1","o2"}, new int[]{0,12}, (1 +eventSeverity) * -1);
+		UIMain.NewOutcome ("Good EventResolution");
     }
 
 	public void GoodEventEnd(int optionSelected,int sevarity){
@@ -450,7 +452,7 @@ public class MainEngine : MonoBehaviour
     {
         
         timeForSacrifice();
-        eventCounter = Random.Range(0, 4);
+		eventCounter = 4;
 		yearTimer = 120.0f;
         followersIncreaseTimes = 6;
         eventHasOccurredJan = false;
@@ -502,7 +504,6 @@ public class MainEngine : MonoBehaviour
 
 			if (eventProbability == 2 && eventCounter > 0 && eventHasOccurredFeb == false)
             {
-				Debug.Log(eventProbability);
                 eventOccurred();
                 eventCounter--;
                 eventHasOccurredFeb = true;
@@ -511,7 +512,6 @@ public class MainEngine : MonoBehaviour
 
 			else if(eventProbability==1)
 			{
-				Debug.Log(eventProbability);
 				eventHasOccurredFeb = true;
 			}
         }
@@ -520,10 +520,9 @@ public class MainEngine : MonoBehaviour
         else if (yearTimer >= 90.0f && yearTimer < 100.0f )
         {
             int eventProbability = Random.Range(1, 3);
-
 			if (eventProbability == 2 && eventCounter > 0 && eventHasOccurredMar == false)
             {
-				Debug.Log(eventProbability);
+				//Debug.Log(eventProbability);
                 eventOccurred();
                 eventCounter--;
                 eventHasOccurredMar = true;
@@ -532,7 +531,7 @@ public class MainEngine : MonoBehaviour
 
 			else if(eventProbability==1)
 			{
-				Debug.Log(eventProbability);
+
 				eventHasOccurredMar = true;
 			}
         }
@@ -545,7 +544,6 @@ public class MainEngine : MonoBehaviour
 
 			if (eventProbability == 2 && eventCounter > 0 && eventHasOccurredApr ==false)
             {
-				Debug.Log(eventProbability);
                 eventOccurred();
                 eventCounter--;
                 eventHasOccurredApr = true;
@@ -553,7 +551,6 @@ public class MainEngine : MonoBehaviour
             }
 			else if(eventProbability==1)
 			{
-				Debug.Log(eventProbability);
 				eventHasOccurredApr = true;
 			}
         }
@@ -565,7 +562,6 @@ public class MainEngine : MonoBehaviour
 
 			if (eventProbability == 2 && eventCounter > 0 && eventHasOccurredMay == false)
             {
-				Debug.Log(eventProbability);
                 eventOccurred();
                 eventCounter--;
                 eventHasOccurredMay = true;
@@ -574,7 +570,6 @@ public class MainEngine : MonoBehaviour
 
 			else if(eventProbability==1)
 			{
-				Debug.Log(eventProbability);
 				eventHasOccurredMay = true;
 			}
         }
@@ -586,7 +581,6 @@ public class MainEngine : MonoBehaviour
 
 			if (eventProbability == 2 && eventCounter > 0 && eventHasOccurredJun == false)
             {
-				Debug.Log(eventProbability);
                 eventOccurred();
                 eventCounter--;
                 eventHasOccurredJun = true;
@@ -595,7 +589,6 @@ public class MainEngine : MonoBehaviour
 
 			else if(eventProbability==1)
 			{
-				Debug.Log(eventProbability);
 				eventHasOccurredJun = true;
 			}
         }
@@ -607,7 +600,6 @@ public class MainEngine : MonoBehaviour
 
 			if (eventProbability == 2 && eventCounter > 0 && eventHasOccurredJul == false)
             {
-				Debug.Log(eventProbability);
                 eventOccurred();
                 eventCounter--;
                 eventHasOccurredJul = true;
@@ -616,7 +608,6 @@ public class MainEngine : MonoBehaviour
 
 			else if(eventProbability==1)
 			{
-				Debug.Log(eventProbability);
 				eventHasOccurredJul = true;
 			}
         }
@@ -628,7 +619,6 @@ public class MainEngine : MonoBehaviour
 
 			if (eventProbability == 2 && eventCounter > 0 && eventHasOccurredAug == false)
             {
-				Debug.Log(eventProbability);
                 eventOccurred();
                 eventCounter--;
                 eventHasOccurredAug = true;
@@ -636,7 +626,6 @@ public class MainEngine : MonoBehaviour
             }
 			else if(eventProbability==1)
 			{
-				Debug.Log(eventProbability);
 				eventHasOccurredAug = true;
 			}
         }
@@ -648,7 +637,6 @@ public class MainEngine : MonoBehaviour
 
 			if (eventProbability == 2 && eventCounter > 0 && eventHasOccurredSep == false)
             {
-				Debug.Log(eventProbability);
                 eventOccurred();
                 eventCounter--;
                 eventHasOccurredSep = true;
@@ -657,7 +645,6 @@ public class MainEngine : MonoBehaviour
 
 			else if(eventProbability==1)
 			{
-				Debug.Log(eventProbability);
 				eventHasOccurredSep = true;
 			}
         }
@@ -669,7 +656,6 @@ public class MainEngine : MonoBehaviour
 
 			if (eventProbability == 2 && eventCounter > 0 && eventHasOccurredOct == false)
             {
-				Debug.Log(eventProbability);
                 eventOccurred();
                 eventCounter--;
                 eventHasOccurredOct = true;
@@ -678,7 +664,6 @@ public class MainEngine : MonoBehaviour
 
 			else if(eventProbability==1)
 			{
-				Debug.Log(eventProbability);
 				eventHasOccurredOct = true;
 			}
         }
@@ -691,7 +676,6 @@ public class MainEngine : MonoBehaviour
 
 			if (eventProbability == 2 && eventCounter > 0 && eventHasOccurredNov == false)
             {
-				Debug.Log(eventProbability);
                 eventOccurred();
                 eventCounter--;
                 eventHasOccurredNov = true;
@@ -700,7 +684,6 @@ public class MainEngine : MonoBehaviour
 
 			else if(eventProbability==1)
 			{
-				Debug.Log(eventProbability);
 				eventHasOccurredNov = true;
 			}
         }
@@ -712,7 +695,6 @@ public class MainEngine : MonoBehaviour
 
 			if (eventProbability == 2 && eventCounter > 0 && eventHasOccurredDec ==false)
             {
-				Debug.Log(eventProbability);
                 eventOccurred();
                 eventCounter--;
                 eventHasOccurredDec = true;
@@ -721,7 +703,6 @@ public class MainEngine : MonoBehaviour
 
 			else if(eventProbability==1)
 			{
-				Debug.Log(eventProbability);
 				eventHasOccurredDec = true;
 			}
         }
